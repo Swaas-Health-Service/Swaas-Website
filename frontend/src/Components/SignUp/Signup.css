@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.signup{
+    display: flex;
+    flex-direction: row;
+}
+.signup-left{
+    width:40vw;
+    height: auto;
+}
+.signup-right{
+    width:60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+.email{
+    width:30vw;
+}
+.addhar{
+    width:30vw;
+}
+.uhiid{
+    width:25vw;
+}
