@@ -4,25 +4,27 @@
     padding:0;
     font-family:'Encode Sans Expanded',sans-serif;
 }
-header{
-    height: 180px;
+.headerHome{
+    height: 80px;
     width: 100vw;
     margin:0;
     background-color: #DFF8F8;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     display: flex;
+    justify-content: space-between;
 }
 .logo{
-    background-image: url("../../SwaasIcons/swaaslogo.svg");
+    background-image: url("./Assets/Images/logo.png");
     background-size: cover;
     height: 180px;
     width:350px;
 }
 .nav-bar{
-    height: 180px;
+    height: 140px;
     width: 700px;
     text-align: center;
+    margin-top: -5rem;
 }
 .nav-bar a{
     position: relative;
@@ -32,45 +34,60 @@ header{
     margin-left: 1.4rem;
     font-size: 1.5rem;
     padding: 4px;
+  
 }
 a:hover{
     border: 2px solid rgb(129, 129, 250);
     border-radius: 4px;
 }
-.photo{
-    margin-top: 8px;
-    height: 160px;
-    width: 160px;
-    background-image: "";
+.photoHome{
+    /* margin-top: 8px; */
+    height: 80px;
+    width: 80px;
+    background-image: url("./Assets/Images/profile-photo.png");
     background-size: cover;
-    margin-left: 155px;
+    margin-left: 8rem;
+    margin-right: 2rem;
 }
-.photo:hover{
+.photoHome:hover{
     border: 2px solid rgb(129, 129, 250);
     border-radius: 2rem;
 }
 body{
     background-color: #CAF4F4;
-    overflow: auto;
+    overflow-x: hidden;
+    font-family: 'Montserrat', 'sans-serif';
 }
-.info{
+.infoHome{
     height: 450px;
-    width: 1000px;
+    width: 1020px;
     border-radius: 1rem;
     background-color: #CAEFD1;
     margin-top: 40px;
-    margin-left: 155px;
     display: flex;
     justify-content: center;
+    position: relative;
+    left:12%;
 }
-.text-info{
+.infoHome2{
+    height: 400px;
+    width: 1020px;
+    border-radius: 1rem;
+    background-color: #CAEFD1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left:12%;
+}
+.text-infoHome{
     margin: 0;
     height: 450px;
     width: 550px;
     border-radius: 1rem;
 }
 .image-info1{
-    background-image: "";
+    background-image: url("./Assets/Images/Download_Doctors_Concept_Illustration_for_free-removebg-preview\ 1.png");
     background-size: cover;
     height: 450px;
     width: 450px;
@@ -85,10 +102,17 @@ body{
     margin-left: 2.4rem;
     margin-right: 2.4rem;
 }
-.text-info p{
-    font-size: 1.4rem;
+.text-infoHome p{
+    /* font-size: 1.4rem;
 text-align: center;
-margin:2rem;
+margin:2rem; */
+color: #6999B3;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 }
 #toknow{
     margin:0 9rem 0 ;
@@ -101,7 +125,7 @@ margin:2rem;
     color:#0D6869;
     font-size: 1.8rem;
 }
-.communication{
+.communicationHome{
     height: 360px;
     width: 1000px;
     border-radius: 1rem;
@@ -111,7 +135,7 @@ margin:2rem;
     display: flex;
     justify-content: space-evenly;
 }
-.comm1{
+.commHome1{
     margin: 0;
     height: 340px;
     width:210px;
@@ -121,7 +145,7 @@ margin:2rem;
 .img-com1{
     height: 250px;
     width: 210px;
-    background-image: "";
+    background-image: url("./Assets/Images/Emergency.png");
     background-size: cover;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -129,7 +153,7 @@ margin:2rem;
 .img-com2{
     height: 250px;
     width: 210px;
-    background-image: "";
+    background-image: url("./Assets/Images/TeleConsultation-removebg-preview.png");
     background-size: cover;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -137,34 +161,37 @@ margin:2rem;
 .img-com3{
     height: 250px;
     width: 210px;
-    background-image: "";
-    background-size: cover;
+    background-image: url("./Assets/Images/home4-removebg.png");
+    /* background-size: cover; */
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
 .img-com4{
     height: 250px;
     width: 210px;
-    background-image: "";
+    background-image: url("./Assets/Images/Reports.png");
     background-size: cover;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
-.info-com{
+.info-comHome{
 text-align: center;
 margin-top: 1rem;
+
 }
-.info-com a{
+.info-comHome a{
 text-decoration: none;
-color:#0D6869;
+color: #0D6869;
 font-size: 1.25rem;
 font-weight: bold;
+display: flex;
+justify-content: center;
 }
-.info-com p{
+.info-comHome p{
     color: #906E69;
 }
 .image-info2{
-    background-image: "";
+    background-image: url("./Assets/Images/home6.png");
     background-size: cover;
     height: 450px;
     width: 490px;
@@ -173,7 +200,7 @@ font-weight: bold;
     border-bottom-left-radius: 1rem;
 }
 .image-info3{
-    background-image: "";
+    background-image: url("./Assets/Images/BillsandInsuarance.png");
     background-size: cover;
     height: 450px;
     width: 450px;
@@ -182,7 +209,7 @@ font-weight: bold;
     border-bottom-right-radius: 1rem;
 }
 .image-info4{
-    background-image: "";
+    background-image: url("./Assets/Images/home8.png");
     background-size: cover;
     height: 450px;
     width: 480px;
@@ -198,24 +225,25 @@ font-weight: bold;
 }
 .review{
     width: 980px;
-    height: 940px;
-    margin: 10rem;
-    border: 4px solid black;
+    height: 300px;
+    margin-top: 6.8rem;
+    margin-bottom: 6.8rem;
+    margin-left: 13.5%;
     border-radius: 1.5rem;
     background-color: #CAEFD1;
     text-align: center;
 }
 .review-info{
-font-size: 3rem;
-font-weight: bold;
-margin-top: 400px;
+ font-size: 3rem;
+ font-weight: bold;
+ margin-top: 100px;
 }
 .contactus{
     height: 300px;
     width:100vw;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
-    background-color:#45969F;
+    background:linear-gradient(to top,#4998A0,#C9EFD1);
     
 }
 
@@ -224,7 +252,7 @@ margin-top: 400px;
    top: 100px;
     margin-left: 35rem;
     background-size: cover;
-    background-image: "";
+    background-image: url("./Assets/Images/logo4-removebg-preview\ 1.png");
     height: 150px;
     width: 300px;
 }

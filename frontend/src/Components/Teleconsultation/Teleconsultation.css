@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #CAF4F4;
+    font-family: 'Montserrat', 'sans-serif';
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    background-color: #DFF8F8;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0;
+}
+.logo{
+    background-image: url("./Assests/Images/logo.png");
+    background-size: cover;
+    height: 80px;
+    width: 160px;
+    margin-left: 1rem ;
+}
+.profile-photo{
+    background-image: url("./Assests/Images/profile-photo.png");
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-right: 3rem;
+}
+.mainTele{
+    margin-top: 80px;
+    width: 100vw;
+    height: 400px;
+    background-color: #CAEFD1;
+    display: flex;
+}
+ .Teleinfo{
+    height: 400px;
+    width: 800px;
+    margin-left: 2rem;
+}
+ .photo1Tele{
+    background-image: url("./Assests/Images/photo1.jpg");
+    background-size: cover;
+    height:400px;
+    width: 400px;
+    margin-left: 4rem;
+}
+
+.TeleHI1{
+    font-size: 2.5rem;
+color:#6999B3;
+font-weight:600;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+.TeleHI2{
+    font-size: 2.5rem;
+    color:#6999B3;
+    font-weight:600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.Teleinfo1{
+    margin-top: 0;
+    font-size: 1.5rem;
+    color:#6999B3;
+    font-weight:400;
+}
+.button{
+    margin-top: 0;
+    margin-left:2.5rem;
+    height: 4rem;
+    width: 14rem;
+    text-align: center;
+    border-radius: 1rem;
+    background:linear-gradient(to left,#99E5A2,#41D8DD);
+    color:white;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+.infoLinks{
+    margin-top: 2rem;
+}
+.infoLinks a{
+    text-decoration: none;
+    color: #6999B3; 
+}
+.DP{
+    margin-left: 3rem;
+}
+.FF{
+    margin-left: 3rem;
+}
+.specialities{
+    height: 330px;
+    background-color: #CAF4F4;
+    width: 90%;
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+    margin-right: 2.5rem;
+}
+.heading-specialities h2{
+    font-size: 2.5rem;
+color:#6999B3;
+font-weight:600;
+margin-top: 0;
+margin-bottom: 0;
+}
+.heading-specialities p{
+    font-size: 1.25rem;
+    color:#6999B3;
+    font-weight:400;
+    margin-top: 0;
+}
+.communication{
+    height: 240px;
+    width: 100%;
+    margin-left:0px;    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.comm1{
+    height: 190px;
+    width: 220px;
+    border-radius: 1rem;
+}
+.photo2{
+    background-image: url("./Assests/Images/photo2.jpeg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.info-com{
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+.info-com a{
+    text-decoration: none;
+    color: #6999B3; 
+    font-size: 1.1rem;
+    font-weight: 550;
+    text-align: center;
+}
+.photo3{
+    background-image: url("./Assests/Images/photo3.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.photo4{
+    background-image: url("./Assests/Images/photo4.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.photo5{
+    background-image: url("./Assests/Images/photo5.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.photo6{
+    background-image: url("./Assests/Images/photo6.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.photo7{
+    background-image: url("./Assests/Images/photo7.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.photo8{
+    background-image: url("./Assests/Images/photo8.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.photo9{
+    background-image: url("./Assests/Images/photo9.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 190px;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.review{
+    display:flex;
+    justify-content: center;
+    height: 300px;
+    width: 75vw;
+    margin-top: 6rem;
+    background-color:#CAEFD1;
+}
+.review p{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    position: relative;
+    top: 140px;
+    font-weight: bold;
+}
+.footer{
+    height: 400px;
+    width: 100vw;
+    background:linear-gradient(#99E5A2,#41D8DD);
+    margin-top: 10rem;
+}

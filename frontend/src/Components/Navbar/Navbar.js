@@ -1,21 +1,26 @@
-import React from 'react'
+import React  from 'react'
 import Logo from "../../SwaasIcons/swaaslogo.svg"
+import {Link} from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <div>
-      <div className="header">
-        <div className="logo">
+    <>
+      <nav>        <div className="logo">
           <img src={Logo} alt=''/>
         </div>
         <div className="services">
-            <div>OPD Booking</div>
-            <div>Teleconsultation</div>
-            <div>Medical Reports</div>
-            <div>Insurance</div>
+
+            <Link to="/OPD">OPD Booking</Link>
+            <Link to="/Teleconsultation">Teleconsultation</Link>
+            <Link to="/Pathology">Pathology</Link>
+            <Link to="/Insurance">Insurance</Link>
+
+            
         </div>
         <div className="profile"></div>
-      </div>
-    </div>
+        </nav>
+      </>
+  
   )
 }
 
