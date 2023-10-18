@@ -5,7 +5,6 @@ const About = () => {
     <div>
       <nav>
         <div className="swaaslogo">
-           
         </div>
         <div><a href="/">Features</a></div>
         <div><a href="/">Industries</a></div>
