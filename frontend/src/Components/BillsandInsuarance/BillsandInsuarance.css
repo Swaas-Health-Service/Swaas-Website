@@ -56,15 +56,7 @@ body {
     height: 50px;
     width: 170px;
 }
-a {
-    text-decoration: none;
-}
-a:hover {
-    background: linear-gradient(270deg, #12ec33 0%, #0688ce 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 #insurance {
     display: flex;
     background: #8BE7E7;
