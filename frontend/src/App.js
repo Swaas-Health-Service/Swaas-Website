@@ -11,6 +11,8 @@ import Pathology from "./Components/Pathology/Pathology"
 import Profile from "./Components/Profile/Profile"
 import Teleconsultation from "./Components/Teleconsultation/Teleconsultation"
 import Doctors from "./Components/Doctors/Doctors"
+import AboutUS from "./Components/AboutUS/About"
+import MedicineNew from "./Components/Medicine-New/MedicineNew"
 
 
 import {
@@ -27,6 +29,9 @@ const App = () => {
 
       <Main>
         <Routes>
+        <Route exact path='/MedicineNew'element={<MedicineNew/>}/> 
+
+        <Route exact path='/About'element={<AboutUS/>}/> 
           <Route exact path='/BillsandInsuarance'element={<BillsandInsuarance/>}/>       
           <Route exact path='/Emergency' element={<Emergency/>}/>       
           <Route exact path='/' element={<HomePage/>}/>       

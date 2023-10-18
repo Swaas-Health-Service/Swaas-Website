@@ -7,6 +7,8 @@ const HomePage = () => {
       <header className='headerHome'>
         <div className="logo"></div>
         <div className="nav-bar">
+
+
             <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
             <Link to='/Teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
             <Link to='/MedicalReports'><div className='navbar-elements'>Medical Reports</div> </Link>

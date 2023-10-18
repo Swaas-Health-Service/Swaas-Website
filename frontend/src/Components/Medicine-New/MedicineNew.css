@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #CAF4F4;
+    font-family: 'Montserrat', 'sans-serif';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    background-color: #DFF8F8;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0;
+}
+.medi{
+    margin-left: 2.5rem;
+}
+.logo{
+    background-image: url("./Images/logo.png");
+    background-size: cover;
+    height: 80px;
+    width: 160px;
+    margin-left: 1rem ;
+}
+.profile-photo{
+    background-image: url("./Images/profile-photo.png");
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-right: 3rem;
+}
+.med-search{
+    height: 50px;
+    width: 40rem;
+    font-size: 1.25rem;
+    background-color: #DFF8F8;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    margin-top: 15px;
+}
+.cart{
+    height: 50px;
+    margin-top: 15px;
+    width: auto;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient( #8FDD9E, #4ABCF8);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+.main-head{
+    font-size: 2.25rem;
+    margin-left: 4rem;
+    color: #6999B3;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.health-head{
+    font-size: 1.5rem;
+    color: #6999B3;
+    font-weight: 400;
+}
+.med-health{
+height: 220px;
+width: 85vw;
+margin-top: 1.5rem;
+margin-left: 4rem;
+}
+.med-img-div{
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    width: 85vw;
+    margin-top: 0.5rem;
+    border: none;
+}
+.med-img{
+    height: 180px;
+    width: 200px;
+    background: #A297C5;
+    border: 2px solid;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.med-img1{
+    background: #A297C5;
+}
+.med-img2{
+    background: #9FD0B1;
+}
+.med-img3{
+    background: #BCD78D;
+}
+.med-img4{
+    background: #87A4ED;
+}
+.med-img:hover{
+    box-shadow: 2px 4px 8px black;
+}
+.review{
+    display:flex;
+    justify-content: center;
+    height: 300px;
+    width: 75vw;
+    margin-top: 6rem;
+    background-color:#CAEFD1;
+}
+.review p{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    position: relative;
+    top: 140px;
+    font-weight: bold;
+}
+.footer{
+    height: 400px;
+    width: 100vw;
+    background:linear-gradient(#99E5A2,#41D8DD);
+    margin-top: 10rem;
+}

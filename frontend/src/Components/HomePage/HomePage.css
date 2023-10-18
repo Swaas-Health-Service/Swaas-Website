@@ -247,14 +247,17 @@ justify-content: center;
     position: relative;
     top: 100px;
     margin-left: 35rem;
+
     background-size: cover;
     background-image: url("./Assets/Images/logo4-removebg-preview\ 1.png");
-    height: 150px;
+    height: 175px;
     width: 300px;
 }
 .contactus p{
     position: relative;
+
     top: 100px;
+
     margin-left: 37rem;
 
 }

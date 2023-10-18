@@ -74,7 +74,7 @@ const Profile = () => {
                   <div className="contact-info">Emergency Contact No.</div>
                   <input type="text" placeholder="" id="ac" style={{width:"15.5rem"}}/>
                 </div>
-                <div className="email">
+                <div className="email" >
                   <div className="name-info">E-mail ID</div>
                   <input type="text" placeholder="" id="ab" style={{width:"29rem"}}/>
                 </div>

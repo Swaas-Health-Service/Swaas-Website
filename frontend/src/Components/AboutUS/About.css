@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.swaaslogo{
+    background-image: url("./Images/swaaslogo.png");
+    background-size: cover;
+    height: 75px;
+    width: 150px;
+    margin-left: 1rem ;
+}
+.profile-photo{
+    background-image: url("./Images/usercircle.png");
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-right: 3rem;}
+nav {
+    height: 92px;
+    background: #DFF8F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    top: 0px;
+    font-size: x-large;
+    font-weight: 700;
+    color: #6999B3;
+}
+
+body {
+    background: #CAF4F4;;
+}
+h1 {
+    color: #0D6869;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    background: linear-gradient(270deg, #12ec33 0%, #0688ce 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#mission {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+#missiontext {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: larger;
+}
+.mottopic {
+    /* margin-right: 300px; */
+    background-image: url("./Images/motto.png");
+    background-size: cover;
+    width: 4000px;
+height: 260px;
+}
+#aboutus {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+#abouttext {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: larger;
+}
+.aboutpic {
+    /* margin-left: 300px; */
+    background-image: url("./Images/aboutuspic.png");
+    background-size: cover;
+    width: 4000px;
+    height: 408px;
+
+}
+#founding {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+#foundingtext {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: larger;
+}
+.foundingpic {
+    /* margin-right: 300px; */
+    background-image: url("./Images/foundingstory.png");
+    background-size: cover;
+    width: 4000px;
+    height: 385px;
+}
+#founders {
+    margin-top: 80px;
+    text-align: center;
+}
+#founderpics {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+.review{
+    display:flex;
+    justify-content: center;
+    height: 300px;
+    width: 75vw;
+    margin-top: 6rem;
+    background-color:#CAEFD1;
+}
+.review p{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    position: relative;
+    top: 140px;
+    font-weight: bold;
+}
+.footer{
+    height: 200px;
+    width: 100vw;
+    margin-top: 4rem;
+    background:linear-gradient(to top,#99E5A2,#41D8DD);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
