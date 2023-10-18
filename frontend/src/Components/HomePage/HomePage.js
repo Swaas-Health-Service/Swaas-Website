@@ -7,10 +7,10 @@ const HomePage = () => {
       <header className='headerHome'>
         <div className="logo"></div>
         <div className="nav-bar">
-            <a href="/OPD" >OPD Booking </a>
-            <a href="/Teleconsultation">Teleconsulation</a>
-            <a href="/Pathology">Medical Reports </a>
-            <a href="/BillsandInsuarance">Insaurance</a>
+            <a href="/OPD"  style={{fontSize:"22px"}}>OPD Booking </a>
+            <a href="/Teleconsultation"style={{fontSize:"22px"}}>Teleconsulation</a>
+            <a href="/Pathology"style={{fontSize:"22px"}}>Medical Reports </a>
+            <a href="/BillsandInsuarance"style={{fontSize:"22px"}}>Insaurance</a>
         </div>
         <a href="/Profile" > <div className="photoHome"></div></a>
     </header>
