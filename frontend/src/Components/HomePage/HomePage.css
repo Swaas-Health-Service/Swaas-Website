@@ -5,7 +5,7 @@
     font-family:'Encode Sans Expanded',sans-serif;
 }
 .headerHome{
-    height: 80px;
+    height: 10vh;
     width: 100vw;
     margin:0;
     background-color: #DFF8F8;
@@ -17,29 +17,28 @@
 .logo{
     background-image: url("./Assets/Images/logo.png");
     background-size: cover;
-    height: 180px;
-    width:350px;
+    height: 70px;
+    width:150px;
 }
 .nav-bar{
     height: 140px;
-    width: 700px;
+    width: 60vw;
     text-align: center;
     margin-top: -5rem;
+    display: flex;
+    flex-direction: row;
 }
-.nav-bar a{
+.navbar-elements{
     position: relative;
     top: 92px;
     text-decoration: none;
     color: black;
-    margin-left: 1.4rem;
-    font-size: 1.5rem;
+    margin-left: 5rem;
+    font-size: 1.3rem;
     padding: 4px;
   
 }
-a:hover{
-    border: 2px solid rgb(129, 129, 250);
-    border-radius: 4px;
-}
+
 .photoHome{
     /* margin-top: 8px; */
     height: 80px;
@@ -49,10 +48,7 @@ a:hover{
     margin-left: 8rem;
     margin-right: 2rem;
 }
-.photoHome:hover{
-    border: 2px solid rgb(129, 129, 250);
-    border-radius: 2rem;
-}
+
 body{
     background-color: #CAF4F4;
     overflow-x: hidden;
@@ -60,7 +56,7 @@ body{
 }
 .infoHome{
     height: 450px;
-    width: 1020px;
+    width: 75vw;
     border-radius: 1rem;
     background-color: #CAEFD1;
     margin-top: 40px;
@@ -70,8 +66,8 @@ body{
     left:12%;
 }
 .infoHome2{
-    height: 400px;
-    width: 1020px;
+    height: 63vh;
+    width: 75vw;
     border-radius: 1rem;
     background-color: #CAEFD1;
     margin-top: 40px;
@@ -127,7 +123,7 @@ line-height: normal;
 }
 .communicationHome{
     height: 360px;
-    width: 1000px;
+    width: 77vw;
     border-radius: 1rem;
     background-color: #CAF4F4;
     margin-top: 40px;
@@ -201,9 +197,9 @@ justify-content: center;
 }
 .image-info3{
     background-image: url("./Assets/Images/BillsandInsuarance.png");
-    background-size: cover;
-    height: 450px;
-    width: 450px;
+    background-size:cover;
+    height: 62vh;
+    width: 25vw;
     margin: 0px;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -224,11 +220,11 @@ justify-content: center;
     border: 1px solid black;
 }
 .review{
-    width: 980px;
+    width: 75vw;
     height: 300px;
     margin-top: 6.8rem;
     margin-bottom: 6.8rem;
-    margin-left: 13.5%;
+    margin-left: 12%;
     border-radius: 1.5rem;
     background-color: #CAEFD1;
     text-align: center;
@@ -249,7 +245,7 @@ justify-content: center;
 
 .logonew{
     position: relative;
-   top: 100px;
+    top: 100px;
     margin-left: 35rem;
     background-size: cover;
     background-image: url("./Assets/Images/logo4-removebg-preview\ 1.png");
@@ -258,17 +254,7 @@ justify-content: center;
 }
 .contactus p{
     position: relative;
-   top: 100px;
+    top: 100px;
     margin-left: 37rem;
 
-}
-p i{
-    margin-left: 2rem;
-    font-size: 1.8rem;
-    color: white;
-    opacity: 0.8;
-}
-p i:hover{
-    opacity: 1;
-    font-size: 2rem;
 }

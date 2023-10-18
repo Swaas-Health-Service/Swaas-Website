@@ -24,7 +24,6 @@ const App = () => {
   return (
     <>
     <div>
-    {/* <Navbar/> */}
 
       <Main>
         <Routes>
