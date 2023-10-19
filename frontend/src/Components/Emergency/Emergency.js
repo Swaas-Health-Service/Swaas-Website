@@ -1,8 +1,6 @@
 import React from 'react'
 import './Emergency.css'
 import medicalbook from './images/medicalbookpic.png'
-import logo from './images/swaaslogo.png'
-import user from './images/usercircle.png'
 import Navbar from '../Navbar/Navbar'
 const Emergency = () => {
   return (
