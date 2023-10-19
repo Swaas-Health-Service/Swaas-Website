@@ -9,11 +9,11 @@ const HomePage = () => {
         <div className="logo"></div>
         <div className="nav-bar">
 
-
             <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
             <Link to='/Teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
             <Link to='/MedicalReports'><div className='navbar-elements'>Medical Reports</div> </Link>
             <Link to='/OPD'><div className='navbar-elements'>Insurance</div></Link>
+
         </div>
         <div className="photoHome"></div>
     </header>

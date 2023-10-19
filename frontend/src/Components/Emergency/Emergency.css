@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    background-color: #DFF8F8;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0;
+}
+.logo{
+    background-image: url("./Images/swaaslogo.png");
+    background-size: cover;
+    height: 75px;
+    width: 150px;
+    margin-left: 1rem ;
+}
+.profile-photo{
+    background-image: url("./Images/usercircle.png");
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-right: 3rem;
+}
+.medicalbookpic{
+    background-image: url("./Images/medicalbookpic.png");
+    background-size: cover;
+    width: 556px;
+height: 414px;
+    
+}
+
+body {
+    background: #CAF4F4;;
+}
+h1 {
+    color: #0D6869;
+    text-align: center;
+}
+h2 {
+    color: #307743;
+}
+#medicalbook {
+    background: #CAEFCE;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #83ACC2;
+    margin-top: 60px;
+    font-size: x-large;
+}
+button {
+    border-radius: 20px;
+    background: linear-gradient(270deg, #8FDD9E 0%, #4ABCF8 100%);
+    width: 170px;
+    height: 50px;
+    border: none;
+
+}
+a:hover {
+    background: linear-gradient(270deg, #12ec33 0%, #0688ce 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+#hospitalnear{
+    margin-top: 50px;
+}
+#hospitalloc {
+    height: 35px;
+    width: 250px;
+    padding-left: 40px;
+    border-radius: 20px;
+    font-size: larger;
+}
+#hospitallocdiv {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.hospitaldetail {
+    background: #CAEFCE;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    width: 800px;
+    margin-left: 269px;
+    margin-top: 40px;
+    border-radius: 1rem;
+}
+.photoDocEmer{
+    height: 180px;
+    width: 200px;
+    /* margin-top: 25px; */
+    background-image: url("./Images/photo.png");
+    border-radius: 1rem;
+    background-size: cover;
+}
+
+footer {
+    margin-top: 80px;
+    height: 145px;
+    border-radius: 40px;
+    background: linear-gradient(0deg, #45969F 0%, #CAEFD1 135.22%);
+}
