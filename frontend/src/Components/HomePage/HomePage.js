@@ -1,24 +1,26 @@
 import React from 'react';
 import "./HomePage.css";
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 const HomePage = () => {
   return (
     <>
-      <header className='headerHome'>
-        <div className="logo"></div>
-        <div className="nav-bar">
-            <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
-            <Link to='/Teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
-            <Link to='/MedicalReports'><div className='navbar-elements'>Medical Reports</div> </Link>
-            <Link to='/OPD'><div className='navbar-elements'>Insurance</div></Link>
-        </div>
-        <div className="photoHome"></div>
-    </header>
+        <Navbar/>
+        {/* <header className='headerHome'>
+            <div className="logo"></div>
+            <div className="nav-bar">
+                <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
+                <Link to='/Teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
+                <Link to='/MedicalReports'><div className='navbar-elements'>Medical Reports</div> </Link>
+                <Link to='/OPD'><div className='navbar-elements'>Insurance</div></Link>
+            </div>
+            <div className="photoHome"></div>
+        </header> */}
     <div className="infoHome">
         <div className="text-infoHome">
             <div className="msg">We Are Ready To Help & Take Care Of Your Medical Health</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque quos debitis dignissimos quam nam rerum quis voluptatum minus totam beatae, non, provident unde velit labore sapiente fugiat ea veritatis.</p>
-        <button id="toknow"><Link to='/About'>Know About Us</Link></button>
+            <Link to='/About'><button id="toknow">Know About Us</button></Link>
         </div>
         <div className="image-info1"></div>
     </div>
@@ -57,7 +59,7 @@ const HomePage = () => {
         <div className="text-infoHome">
             <div className="msg">OPD Booking</div>
             <p>OPD Booking on our website allows you to conviniently schedule non emergency medical appointment with your preffered healthcare providers,ensuring timly access to outpatient healthcare services.</p>
-        <button id="toknow">Click here</button>
+        <Link to='OPD'><button id="toknow">Click here</button></Link>
         </div>
         </div>
         <div className="infoHome2">
@@ -73,7 +75,7 @@ const HomePage = () => {
             <div className="text-infoHome">
                 <div className="msg">Medical shop</div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic vel architecto unde. Pariatur aspernatur, tempora quisquam quasi ut architecto, quia et a, aperiam consequuntur at omnis consectetur enim ex? </p>
-                <button id="toknow">Click here</button>
+                <Link to='/Medicine'><button id="toknow">Click here</button></Link>
             </div>
         </div>
         <div className="blank"></div>

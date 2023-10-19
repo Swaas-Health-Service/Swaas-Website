@@ -4,7 +4,7 @@ import './OPD.css'
 const OPD = () => {
     return (
             <div>
-<header className='header'>
+        <header className='header'>
         <div className="logo"></div>
         <input type="text" id="textboxopd" placeholder="City,State" />
         <div className="profile-photo"></div>

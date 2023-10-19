@@ -1,10 +1,8 @@
-import Navbar from "./Components/Navbar/Navbar"
 import SignUp from "./Components/SignUp/Signup"
 import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance"
 import Emergency from "./Components/Emergency/Emergency"
 import HomePage from "./Components/HomePage/HomePage"
 import LoginPage from "./Components/LoginPage/Login"
-import Medicines from "./Components/Medicines/Medicines"
 import MentalHealth from "./Components/MentalHealth/MentalHealth"
 import OPD from "./Components/OPD/OPD"
 import Pathology from "./Components/Pathology/Pathology"
@@ -35,7 +33,7 @@ const App = () => {
           <Route exact path='/Emergency' element={<Emergency/>}/>       
           <Route exact path='/' element={<HomePage/>}/>       
           <Route exact path='/LoginPage' element={<LoginPage/>}/>       
-          <Route exact path='/Medicines' element={<Medicines/>}/>       
+          <Route exact path='/Medicine' element={<MedicineNew/>}/>       
           <Route exact path='/MentalHealth' element={<MentalHealth/>}/>       
           <Route exact path='/OPD' element={<OPD/>}/>       
           <Route exact path='/Pathology' element={<Pathology/>}/>       

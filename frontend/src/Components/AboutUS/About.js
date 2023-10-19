@@ -1,5 +1,6 @@
 import React from 'react'
 import "./About.css";
+import founder from './Images/FOUNDER.jpg'
 const About = () => {
   return (
     <div>
@@ -46,7 +47,7 @@ const About = () => {
     <h1 id="founders">Our Founders</h1>
     <div id="founderpics">
         <div>
-            <img src="" alt=""/>
+            <img src={founder} alt="" style={{height:"250px",width:"auto"}}/>
             <h2>Founder</h2>
         </div>
         <div>
