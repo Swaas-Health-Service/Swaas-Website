@@ -1,7 +1,6 @@
 import React from 'react';
 import "./HomePage.css";
 import { Link } from 'react-router-dom';
-// import {Link} from "react-router-dom";
 const HomePage = () => {
   return (
     <>
@@ -21,7 +20,7 @@ const HomePage = () => {
         <div className="text-infoHome">
             <div className="msg">We Are Ready To Help & Take Care Of Your Medical Health</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque quos debitis dignissimos quam nam rerum quis voluptatum minus totam beatae, non, provident unde velit labore sapiente fugiat ea veritatis.</p>
-        <button id="toknow">Know About Us</button>
+        <button id="toknow"><Link to='/About'>Know About Us</Link></button>
         </div>
         <div className="image-info1"></div>
     </div>
