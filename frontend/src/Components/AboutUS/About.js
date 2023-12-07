@@ -7,12 +7,13 @@ const About = () => {
       <nav>
         <div className="swaaslogo">
         </div>
-        <div><a href="/">Features</a></div>
-        <div><a href="/">Industries</a></div>
-        <div><a href="/">Contact us</a></div>
-        <div><a href="/">Reviews</a></div>
-        <div><a href="/">Complain</a></div>
-        <div><a href="/">Join us</a></div>
+        <div className='aboutus-navbar'></div>
+        <div className='aboutus-navbar-elements'>Features</div>
+        <div className='aboutus-navbar-elements'>Industries</div>
+        <div className='aboutus-navbar-elements'>Contact us</div>
+        <div className='aboutus-navbar-elements'>Reviews</div>
+        <div className='aboutus-navbar-elements'>Complain</div>
+        <div className='aboutus-navbar-elements'>Join us</div>
         <div className='profile-photo' >
             
         </div>

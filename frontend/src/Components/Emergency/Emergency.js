@@ -6,14 +6,6 @@ const Emergency = () => {
   return (
     <div>
         <Navbar/>
-        {/* <div className='nav'>
-          <div id="swaaslogo">
-              <img src={logo} alt="" />
-          </div>
-          <div >
-              <img src={user} alt="" />
-          </div>
-        </div> */}
       <div id="medicalbook">
           <div>
               <h1>Emergency Medical Book Page</h1> <br/>

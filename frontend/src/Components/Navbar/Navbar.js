@@ -7,14 +7,14 @@ const Navbar = () => {
   return (
     <>
       <header className='headerHome'>
-            <div className="logo"></div>
+            <Link to='/'><div className="logo"></div></Link>
             <div className="nav-bar">
                 <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
                 <Link to='/Teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
                 <Link to='/MedicalReports'><div className='navbar-elements'>Medical Reports</div> </Link>
-                <Link to='/OPD'><div className='navbar-elements'>Insurance</div></Link>
+                <Link to='/BillsandInsuarance'><div className='navbar-elements'>Insurance</div></Link>
             </div>
-            <div className="photoHome"></div>
+            <Link to='/Profile'><div className="photoHome"></div></Link>
         </header>
       </>
   

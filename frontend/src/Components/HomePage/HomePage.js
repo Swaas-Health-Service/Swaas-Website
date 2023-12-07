@@ -10,7 +10,6 @@ const HomePage = () => {
     <div className="infoHome">
         <div className="text-infoHome">
             <div className="msg">We Are Ready To Help & Take Care Of Your Medical Health</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque quos debitis dignissimos quam nam rerum quis voluptatum minus totam beatae, non, provident unde velit labore sapiente fugiat ea veritatis.</p>
             <Link to='/About'><button id="toknow">Know About Us</button></Link>
         </div>
         <div className="image-info1"></div>

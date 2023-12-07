@@ -36,10 +36,8 @@ h1 {
     color: #0D6869;
     text-align: left;
 }
-a {
-    text-decoration: none;
-}
-a:hover {
+
+.aboutus-navbar-elements:hover {
     background: linear-gradient(270deg, #12ec33 0%, #0688ce 100%);
     background-clip: text;
     -webkit-background-clip: text;

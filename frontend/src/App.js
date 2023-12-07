@@ -24,7 +24,6 @@ const App = () => {
   return (
     <>
     <div>
-
       <Main>
         <Routes>
           <Route exact path='/MedicineNew'element={<MedicineNew/>}/> 
