@@ -1,49 +1,42 @@
 const express=require("express");
+const multer=require('multer');
+const path=require('path');
 require("dotenv").config();
-const PatientRouter=new express.Router();
+const router=new express.Router();
 const bcrypt=require('bcrypt');
 const crypto=require("crypto");
 const Patient=require('../Models/PatientSchema');
 const Token=require('../Models/TokenSchema');
-const multer=require('multer');
 
 
 const Storage=multer.diskStorage({
-    destination:"uploads",
-    fileName:(req,file,cb)=>{
-        cb(null,file.originalname);
+    destination:function(req,file,cb){
+        cb(null,path.resolve(`./Files/Patient/ProfileImage`))
     },
+    fileName:function(req,res,cb){
+        const fileName=`${Date.now()}`
+    }
 });
 
 const upload=multer({
     storage:Storage
 }).single('profilePhoto')
+
+
 //Registration of Patient
-PatientRouter.post('/patient-register',async(req,res)=>{
-    const {healthId,password}=req.body;
+router.post('/patient-register',async(req,res)=>{
     try{
-        const preuser=await Patient.findOne({healthId:healthId})
-        if(preuser){
-            res.status(422).send({message:"User with Health Id already exists"})
-        }else if(password.length<6){
-            res.status(422).send({message:"Password length should be atleast og 6 characters"})
-        }else{
-            const salt = await bcrypt.genSalt(Number(process.env.SALT));
-            const password = await bcrypt.hash(password, salt);
-            const user=await new Patient({ ...req.body, password: password}).save();
-            const token = await new Token({
-                userId: user._id,
-                token: crypto.randomBytes(32).toString("hex"),
-            }).save();
-            upload(req,res,(err)={
-                if(err){
-                    console.log(err);
-                }
-            })
-        }   
+        const {email,password,confirmpassword,mobileNumber,healthId}=req.body;
+        const useremail = await Patient.findOne({ email:email });
+        const usermobilenumber = await Patient.findOne({ mobileNumber:mobileNumber });
+        if (useremail && usermobilenumber) {
+            res.status(422).send({ message: "User already exists" })
+        }else if (password !== confirmpassword) {
+            res.status(422).send({ message: "Password and Confirm Password did not match" })
+        }    
     }catch(err){
         res.status(500).send({message:"Internal Server Error"})
     }
 })
 
-module.exports=PatientRouter;
+module.exports=router;
