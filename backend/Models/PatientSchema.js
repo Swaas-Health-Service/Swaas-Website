@@ -51,7 +51,7 @@ PatientSchema.methods.generateAuthToken=async function(){
 
 const Patient=new mongoose.model("Patient",PatientSchema);
 
-const validate=(data)=>{
+const validateRegistration=(data)=>{
     const schema=JOI.object({
         firstName: JOI.string().required().label("First Name"),
         middleName:JOI.string().label("Middle Name"),
@@ -71,4 +71,12 @@ const validate=(data)=>{
     });
     return schema.validate(data);
 }
-module.exports=Patient;
+
+const validateLogin=(data)=>{
+    const schema=JOI.object({
+        email:JOI.string().email().required().label("Email"),
+        password:JOI.string().required().label("Password"),
+    });
+    return schema.validate(data);
+}
+module.exports={Patient,validate};
