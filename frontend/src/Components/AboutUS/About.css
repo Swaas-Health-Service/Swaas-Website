@@ -24,9 +24,10 @@ nav {
     padding-top: 20px;
     padding-bottom: 40px;
     top: 0px;
-    font-size: x-large;
-    font-weight: 700;
-    color: #6999B3;
+    /* font-size: x-large; */
+    font-size: 1.6rem;
+    
+    color: #0D6869;
 }
 
 body {
@@ -36,8 +37,10 @@ h1 {
     color: #0D6869;
     text-align: left;
 }
-
-.aboutus-navbar-elements:hover {
+a {
+    text-decoration: none;
+}
+a:hover {
     background: linear-gradient(270deg, #12ec33 0%, #0688ce 100%);
     background-clip: text;
     -webkit-background-clip: text;

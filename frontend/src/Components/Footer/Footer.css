@@ -1,0 +1,29 @@
+
+.contactus{
+    height: 300px;
+    width:100vw;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    background:linear-gradient(to top,#4998A0,#C9EFD1);
+    
+}
+
+.logonew{
+    position: relative;
+    top: 90px;
+    margin-left: 33rem;
+
+    background-size: cover;
+    background-image: url("./Images/logo4-removebg-preview\ 1.png");
+    height: 175px;
+    width: 300px;
+}
+.contactus p{
+    position: relative;
+color:beige;
+font-size: 1.5rem;
+    top: 90px;
+
+    margin-left: 39rem;
+
+}

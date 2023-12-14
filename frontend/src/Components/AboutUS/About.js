@@ -1,22 +1,28 @@
 import React from 'react'
 import "./About.css";
-import founder from './Images/FOUNDER.jpg'
+import {Link} from "react-router-dom"
+import Logo from '../Logo/Logo'
+import Footer  from '../Footer/Footer';
+import Review from "../Review/Review"
+import PLogo from '../ProfileLogo/PLogo';
 const About = () => {
   return (
     <div>
       <nav>
-        <div className="swaaslogo">
-        </div>
-        <div className='aboutus-navbar'></div>
-        <div className='aboutus-navbar-elements'>Features</div>
-        <div className='aboutus-navbar-elements'>Industries</div>
-        <div className='aboutus-navbar-elements'>Contact us</div>
-        <div className='aboutus-navbar-elements'>Reviews</div>
-        <div className='aboutus-navbar-elements'>Complain</div>
-        <div className='aboutus-navbar-elements'>Join us</div>
-        <div className='profile-photo' >
+        {/* <div className="swaaslogo">
+        </div> */}
+                <Link to="/"><Logo/></Link>
+
+        <div><a style={{color:" #0D6869"}} href="/">Features</a></div>
+        <div><a style={{color:" #0D6869"}} href="/">Industries</a></div>
+        <div><a style={{color:" #0D6869"}}href="/">Contact us</a></div>
+        <div><a style={{color:" #0D6869"}}href="/">Reviews</a></div>
+        <div><a style={{color:" #0D6869"}}href="/">Complain</a></div>
+        <div><a style={{color:" #0D6869"}}href="/">Join us</a></div>
+        {/* <div className='profile-photo' >
             
-        </div>
+        </div> */}
+        <Link to="/Profile" ><PLogo/></Link>
     </nav>
     <div id="mission">
         <div id="missiontext">
@@ -48,7 +54,7 @@ const About = () => {
     <h1 id="founders">Our Founders</h1>
     <div id="founderpics">
         <div>
-            <img src={founder} alt="" style={{height:"250px",width:"auto"}}/>
+            <img src="" alt=""/>
             <h2>Founder</h2>
         </div>
         <div>
@@ -64,10 +70,11 @@ const About = () => {
             <h2>CTO</h2>
         </div>
     </div>
-    <div className="review">
+    {/* <div className="review">
           <p>Reviews</p>
-      </div>
-    <footer className='footer'></footer>
+      </div> */}
+      <Review/>
+<Footer/>
 
     </div>
   )

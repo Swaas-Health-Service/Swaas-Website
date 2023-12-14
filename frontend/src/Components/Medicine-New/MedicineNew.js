@@ -1,13 +1,21 @@
 import React from 'react'
 import  "./MedicineNew.css"
+import {Link} from "react-router-dom"
+import Logo from '../Logo/Logo'
+import Footer from '../Footer/Footer'
+import Review from '../Review/Review'
+import PLogo from '../ProfileLogo/PLogo'
 const MedicineNew = () => {
   return (
     <div>
       <header>
-        <div class="logo"></div>
+        {/* <div class="logo"></div> */}
+        <Link to="/"><Logo/></Link>
+
         <input type="search" class="med-search" placeholder=" Search for medicines and more"/>
         <button class="cart"> <i class="fa-solid fa-cart-plus"></i> View Cart</button>
-        <div class="profile-photo"></div>
+        {/* <div class="profile-photo"></div> */}
+        <Link to="/Profile"><PLogo/></Link>
     </header>
     <div className="medi">
     <div class="main-head">Browse Medicines and Health Products</div>
@@ -30,10 +38,12 @@ const MedicineNew = () => {
         </div>
     </div>
     </div>
-    <div className="review">
+    <Review/>
+    {/* <div className="review">
           <p>Reviews</p>
-      </div>
-      <div className="footer"></div>
+      </div> */}
+      {/* <div className="footer"></div> */}
+<Footer/>
     </div>
   )
 }

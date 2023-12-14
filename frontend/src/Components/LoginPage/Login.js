@@ -1,12 +1,18 @@
 import React from 'react'
  import "./Login.css";
-
+ import {Link} from "react-router-dom"
+ import Logo from '../Logo/Logo'
+import PLogo from '../ProfileLogo/PLogo';
+ 
 const Login = () => {
   return (
     <div>
       <header className='header'>
-        <div className="logo"></div>
-        <div className="profile-photo"></div>
+        {/* <div className="logo"></div> */}
+        <Link to="/"><Logo/></Link>
+
+        {/* <div className="profile-photo"></div> */}
+        <Link to="Profile"><PLogo/></Link>
       </header>
     <div id="loginpage">
         <div className="loginpic">

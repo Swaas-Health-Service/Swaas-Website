@@ -126,6 +126,11 @@ margin-bottom: 0;
     height: 190px;
     width: 220px;
     border-radius: 1rem;
+    
+}
+.comm1:hover{
+    transform: scale(1.1);
+    cursor:pointer;
 }
 .photo2{
     background-image: url("./Assests/Images/photo2.jpeg");

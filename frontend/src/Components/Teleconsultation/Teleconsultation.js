@@ -1,11 +1,18 @@
 import React from 'react'
 import "./Teleconsultation.css";
+import {Link} from "react-router-dom"
+import Logo from '../Logo/Logo'
+import Footer from '../Footer/Footer';
+import Review from '../Review/Review';
+import PLogo from '../ProfileLogo/PLogo';
 const Teleconsultation = () => {
   return (
     <div>
        <header className='header'>
-        <div className="logo"></div>
-        <div className="profile-photo"></div>
+        {/* <div className="logo"></div> */}
+        <Link to="/"><Logo/></Link>
+                {/* <div className="profile-photo"></div> */}
+                <Link to="/Profile"><PLogo/></Link>
     </header>
     <div className='mainTele'>
         <div className="Teleinfo">
@@ -19,7 +26,7 @@ const Teleconsultation = () => {
             </div>
         </div>
         <div className="photo1Tele"></div>
-    </div >
+    </div>
     <div className="specialities">
         <div className="heading-specialities">
             <h2>Specialities</h2>
@@ -84,10 +91,12 @@ const Teleconsultation = () => {
             </div>
         </div>
     </div>
-    <div className="review">
+    <Review/>
+    {/* <div className="review">
         <p>Reviews</p>
     </div>
-    <div className="footer"></div> 
+    <div className="footer"></div>  */}
+    <Footer/>
     </div>
   )
 }
