@@ -11,7 +11,6 @@ const Token=require('../Models/TokenSchema');
 const validateToken=require('../Utils/validateToken');
 const sendEmail = require("../Utils/sendEmail");
 
-
 const Storage=multer.diskStorage({
     destination:function(req,file,cb){
         cb(null,path.resolve(`./Files/Patient/ProfileImage`))
@@ -116,7 +115,7 @@ router.patch('/patient-update/:id',async(req,res)=>{
         if (error) {
             res.status(400).send({ message: error.details[0].message });
         }
-        const {email,password,confirmpassword,mobileNumber,healthId}=req.body;
+        const {email,password,confirmpassword,mobileNumber}=req.body;
         const useremail = await Patient.findOne({ email:email });
         const usermobilenumber = await Patient.findOne({ mobileNumber:mobileNumber });
         if (!useremail && !usermobilenumber) {
@@ -220,6 +219,5 @@ router.post("password-reset/:id/:token", async (req, res) => {
 		res.status(500).send({ message: "Internal Server Error" });
 	}
 });
-
 
 module.exports=router;

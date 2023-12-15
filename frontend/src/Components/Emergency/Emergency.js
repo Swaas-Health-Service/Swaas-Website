@@ -45,7 +45,7 @@ const Emergency = () => {
             <p>Famous:</p>
             <p>address</p>
         </div>
-        <button><a href="">View Now</a></button>
+        <button><a href="/">View Now</a></button>
     </div>
     <div class="hospitaldetail">
     <div className="photoDocEmer"></div>
@@ -54,7 +54,7 @@ const Emergency = () => {
             <p>Famous:</p>
             <p>address</p>
         </div>
-        <button><a href="">View Now</a></button>
+        <button><a href="/">View Now</a></button>
     </div>
     <div class="hospitaldetail">
     <div className="photoDocEmer"></div>
@@ -63,9 +63,10 @@ const Emergency = () => {
             <p>Famous:</p>
             <p>address</p>
         </div>
-        <button><a href="">View Now</a></button>
+        <button><a href="/">View Now</a></button>
     </div>
-<Footer/>    </div>
+<Footer/>    
+</div>
   )
 }
 
