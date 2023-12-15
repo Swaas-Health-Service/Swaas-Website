@@ -1,6 +1,6 @@
 import React from 'react'
 import './Emergency.css'
-import medicalbook from './images/medicalbookpic.png'
+import medicalbook from './Images/medicalbookpic.png'
 import Navbar from '../Navbar/Navbar'
 const Emergency = () => {
   return (

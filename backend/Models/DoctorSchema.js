@@ -13,8 +13,7 @@ const DoctorSchema = new mongoose.Schema({
     district:{type:String,required:true},
     state:{type:String,required:true},
     pincode:{type:String,required:true},
-    
-    
+    hospital:{type:String,required:true},
 });
 
 const Doctor=new mongoose.model("Patient",DoctorSchema);
