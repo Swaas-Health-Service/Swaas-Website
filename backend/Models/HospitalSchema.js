@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 require("dotenv").config();
 
-const DoctorSchema = new mongoose.Schema({
+const HospitalSchema = new mongoose.Schema({
 	name:{type:String,requird:true},
     email:{type:String,requird:true},
     phonenumber:{type:String,required:true},
@@ -14,6 +14,6 @@ const DoctorSchema = new mongoose.Schema({
     pincode:{type:String,required:true},
 });
 
-const Doctor=new mongoose.model("Patient",DoctorSchema);
+const Doctor=new mongoose.model("Hostpital",HospitalSchema);
 
 module.exports=Doctor;

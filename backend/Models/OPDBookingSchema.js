@@ -10,7 +10,6 @@ const OPDBookingSchema = new mongoose.Schema({
     status:{type:String,enum:["BOOKED","CHECKUP-PENDING","CHECKUP-DONE"],default:"BOOKED"}
 });
 
+const OPDBooking=new mongoose.model("OPDBooking",OPDBookingSchema);
 
-const Patient=new mongoose.model("Patient",OPDBookingSchema);
-
-module.exports=Patient;
+module.exports=OPDBooking;

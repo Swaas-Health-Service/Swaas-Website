@@ -1,0 +1,12 @@
+const express=require("express");
+const multer=require('multer');
+const path=require('path');
+require("dotenv").config();
+const router=new express.Router();
+const bcrypt=require('bcrypt');
+const crypto=require("crypto");
+import JOI from "joi";
+const {Doctor}=require('../Models/Doctor');
+const Token=require('../Models/TokenSchema');
+const validateToken=require('../Utils/validateToken');
+const sendEmail = require("../Utils/sendEmail");

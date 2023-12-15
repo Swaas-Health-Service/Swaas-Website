@@ -16,6 +16,6 @@ const DoctorSchema = new mongoose.Schema({
     hospital:{type:String,required:true},
 });
 
-const Doctor=new mongoose.model("Patient",DoctorSchema);
+const Doctor=new mongoose.model("Doctor",DoctorSchema);
 
 module.exports=Doctor;
