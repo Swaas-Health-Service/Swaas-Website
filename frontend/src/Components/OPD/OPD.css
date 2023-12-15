@@ -15,6 +15,7 @@ body {
     border: 1px solid #000;
     background: #DFF8F8;
     font-size: larger;
+    margin-top: 0.8rem;
 }
 #opdimages {
     display: flex;
@@ -57,6 +58,7 @@ h1 {
     left: 0;
     top: 1px;
 }
+
 .opdimg {
     background: #CAEFD1;
     height: 400px;
@@ -64,41 +66,65 @@ h1 {
     color: #0D6869;
     /* padding-top: 5px; */
     text-align: center;
+    border-radius: 1.5rem;
+}
+.opdimg:hover{
+    transform: scale(1.05);
+     /* Scale the element to 120% of its original size on hover */
+     background: #45969F;
+
 }
 .tooth {
     margin-top: 60px;
     width: 180px;
     height: 269px;
-background-image: url("./images/tooth.png");
+/* background-image: url("./images/tooth.png"); */
+background-image: url("../SwaasIcons/tooth.png");
+
 background-size: cover;
 }
 .stethoscope {
     margin-top: 120px;
     width: 180px;
     height: 210px;
-background-image: url("./images/stethoscope.png");background-size: cover;
+/* background-image: url("./images/stethoscope.png"); */
+background-image: url("../SwaasIcons/stethoscope.png");
+
+background-size: cover;
 }
 .hand {
     margin-top: 60px;
     width: 180px;
     height: 200px;
-background-image: url("./images/hand.png");background-size: cover;
+/* background-image: url("./images/hand.png"); */
+background-image: url("../SwaasIcons/hand.png");
+
+background-size: cover;
 }
 .bed{
     margin-top: 120px;
     width: 180px;
     height: 200px;
-background-image: url("./images/bed.png");background-size: cover;
+/* background-image: url("./images/bed.png"); */
+background-image: url("../SwaasIcons/bed.png");
+
+background-size: cover;
 }
 .homeo {
     margin-top: 60px;
     width: 180px;
     height: 200px;
-background-image: url("./images/homeo.png");background-size: cover;
+/* background-image: url("./images/homeo.png"); */
+background-image: url("../SwaasIcons/homeo.png");
+
+background-size: cover;
 }
 .yoga {
     margin-top: 120px;
     width: 180px;
 height: 200px;
-background-image: url("./images/yoga.png");background-size: cover;
+/* background-image: url("./images/yoga.png"); */
+background-image: url("../SwaasIcons/yoga.png");
+
+background-size: cover;
 }

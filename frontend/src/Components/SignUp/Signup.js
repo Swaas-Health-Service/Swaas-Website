@@ -1,11 +1,15 @@
 import React from 'react'
+import {Link} from "react-router-dom"
+import Logo from '../Logo/Logo'
 
 import "./Signup.css"
 const Signup = () => {
   return (
     <div>
       <header>
-        <div className="logo"></div>
+        {/* <div className="logo"></div> */}
+        <Link to="/"><Logo/></Link>
+
         <div className="profile-photo"></div>
       </header>
       <div className="signup-sidebar">

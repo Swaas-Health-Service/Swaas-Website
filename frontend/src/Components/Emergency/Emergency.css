@@ -13,27 +13,32 @@
     margin: 0;
 }
 .logo{
-    background-image: url("./Images/swaaslogo.png");
+    /* background-image: url("./Images/swaaslogo.png"); */
+    background-image: url("../SwaasIcons/swaaslogo.png");
+
     background-size: cover;
     height: 75px;
     width: 150px;
     margin-left: 1rem ;
 }
 .profile-photo{
-    background-image: url("./Images/usercircle.png");
+    /* background-image: url("./Images/usercircle.png"); */
+    background-image: url("../SwaasIcons/profile-photo.png");
+
     background-size: cover;
     height: 80px;
     width: 80px;
     margin-right: 3rem;
 }
 .medicalbookpic{
-    background-image: url("./Images/medicalbookpic.png");
+    /* background-image: url("./Images/medicalbookpic.png"); */
+    background-image: url("../SwaasIcons/medicalbookpic.png");
+
     background-size: cover;
     width: 556px;
 height: 414px;
     
 }
-
 
 body {
     background: #CAF4F4;;
@@ -61,7 +66,6 @@ button {
     width: 170px;
     height: 50px;
     border: none;
-
 
 }
 a:hover {
@@ -93,7 +97,6 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     height: 200px;
     width: 800px;
     margin-left: 269px;
@@ -104,7 +107,9 @@ a {
     height: 180px;
     width: 200px;
     /* margin-top: 25px; */
-    background-image: url("./Images/photo.png");
+    /* background-image: url("./Images/photo.png"); */
+    background-image: url("../SwaasIcons/photo.png");
+
     border-radius: 1rem;
     background-size: cover;
 }

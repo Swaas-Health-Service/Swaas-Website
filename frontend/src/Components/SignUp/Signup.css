@@ -15,14 +15,18 @@ header{
     margin: 0;
 }
 .logo{
-    background-image: url("./Images/logo.png");
+    /* background-image: url("./Images/logo.png"); */
+    background-image: url("../SwaasIcons/logo.png");
+
     background-size: cover;
     height: 80px;
     width: 160px;
     margin-left: 1rem ;
 }
 .profile-photo{
-    background-image: url("./Images/profile-photo.png");
+    /* background-image: url("./Images/profile-photo.png"); */
+    background-image: url("../SwaasIcons/profile-photo.png");
+
     background-size: cover;
     height: 80px;
     width: 80px;
@@ -42,7 +46,9 @@ header{
   margin-top: 3.5rem;
 }
 .signup-photo{
-    background-image: url("./Images/signup-page-photo-removebg-preview.png");
+    /* background-image: url("./Images/signup-page-photo-removebg-preview.png"); */
+    background-image: url("../SwaasIcons/signup-page-photo-removebg-preview.png");
+
     height: 32vw;
     width: 39vw;
     position: relative;

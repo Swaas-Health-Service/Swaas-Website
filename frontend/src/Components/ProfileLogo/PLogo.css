@@ -1,0 +1,9 @@
+.profile-photo{
+    /* background-image: url("./usercircle.png"); */
+    background-image: url("../SwaasIcons/usercircle.png");
+
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-right: 3rem;
+}

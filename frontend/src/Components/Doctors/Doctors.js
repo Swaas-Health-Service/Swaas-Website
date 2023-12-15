@@ -1,11 +1,17 @@
 import React from 'react'
 import "./Doctors.css";
+import {Link} from "react-router-dom"
+import Logo from '../Logo/Logo'
+import Footer from '../Footer/Footer';
+import PLogo from '../ProfileLogo/PLogo';
 const Doctors = () => {
   return (
     <div>
        <header className="header">
-        <div className="logo"></div>
-        <div className="profile-photo"></div>
+        {/* <div className="logo"></div> */}
+        <Link to="/"><Logo/></Link>
+<Link to="/Profile"><PLogo/></Link>
+        {/* <div className="profile-photo"></div> */}
     </header >
     <div className="infoDoc">XXX Available Doctors Now </div>
     <div className="profileDoc-info">
@@ -68,8 +74,7 @@ const Doctors = () => {
             <p className="btn-info">500 Consultation Fee</p>
         </div>
     </div>
-    <div className="footer"></div>
-    </div>
+<Footer/>    </div>
   )
 }
 
