@@ -15,14 +15,18 @@ body{
     margin: 0;
 }
 .logo{
-    background-image: url("./Assests/Images/logo.png");
+    /* background-image: url("./Assests/Images/logo.png"); */
+    background-image: url("../SwaasIcons/logo.png");
+
     background-size: cover;
     height: 80px;
     width: 160px;
     margin-left: 1rem ;
 }
 .profile-photo{
-    background-image: url("./Assests/Images/profile-photo.png");
+    /* background-image: url("./Assests/Images/profile-photo.png"); */
+    background-image: url("../SwaasIcons/profile-photo.png");
+
     background-size: cover;
     height: 80px;
     width: 80px;
@@ -41,7 +45,9 @@ body{
     margin-left: 2rem;
 }
  .photo1Tele{
-    background-image: url("./Assests/Images/photo1.jpg");
+    /* background-image: url("./Assests/Images/photo1.jpg"); */
+    background-image: url("../SwaasIcons/photo1.jpg");
+
     background-size: cover;
     height:400px;
     width: 400px;
@@ -133,7 +139,9 @@ margin-bottom: 0;
     cursor:pointer;
 }
 .photo2{
-    background-image: url("./Assests/Images/photo2.jpeg");
+    /* background-image: url("./Assests/Images/photo2.jpeg"); */
+    background-image: url("../SwaasIcons/photo2.jpeg");
+
     background-size: cover;
     margin: 0;
     height: 190px;
@@ -153,7 +161,9 @@ margin-bottom: 0;
     text-align: center;
 }
 .photo3{
-    background-image: url("./Assests/Images/photo3.jpg");
+    /* background-image: url("./Assests/Images/photo3.jpg"); */
+    background-image: url("../SwaasIcons/photo3.jpg");
+
     background-size: cover;
     margin: 0;
     height: 190px;
@@ -161,7 +171,9 @@ margin-bottom: 0;
     border-radius: 1.5rem;
 }
 .photo4{
-    background-image: url("./Assests/Images/photo4.jpg");
+    /* background-image: url("./Assests/Images/photo4.jpg"); */
+    background-image: url("../SwaasIcons/photo4.jpg");
+
     background-size: cover;
     margin: 0;
     height: 190px;
@@ -169,7 +181,9 @@ margin-bottom: 0;
     border-radius: 1.5rem;
 }
 .photo5{
-    background-image: url("./Assests/Images/photo5.jpg");
+    /* background-image: url("./Assests/Images/photo5.jpg"); */
+    background-image: url("../SwaasIcons/photo5.jpg");
+
     background-size: cover;
     margin: 0;
     height: 190px;
@@ -177,7 +191,9 @@ margin-bottom: 0;
     border-radius: 1.5rem;
 }
 .photo6{
-    background-image: url("./Assests/Images/photo6.jpg");
+    /* background-image: url("./Assests/Images/photo6.jpg"); */
+    background-image: url("../SwaasIcons/photo6.jpg");
+
     background-size: cover;
     margin: 0;
     height: 190px;
@@ -185,7 +201,9 @@ margin-bottom: 0;
     border-radius: 1.5rem;
 }
 .photo7{
-    background-image: url("./Assests/Images/photo7.jpg");
+    /* background-image: url("./Assests/Images/photo7.jpg"); */
+    background-image: url("../SwaasIcons/photo7.jpg");
+
     background-size: cover;
     margin: 0;
     height: 190px;
@@ -193,7 +211,9 @@ margin-bottom: 0;
     border-radius: 1.5rem;
 }
 .photo8{
-    background-image: url("./Assests/Images/photo8.jpg");
+    /* background-image: url("./Assests/Images/photo8.jpg"); */
+    background-image: url("../SwaasIcons/photo8.jpg");
+
     background-size: cover;
     margin: 0;
     height: 190px;
@@ -201,7 +221,9 @@ margin-bottom: 0;
     border-radius: 1.5rem;
 }
 .photo9{
-    background-image: url("./Assests/Images/photo9.jpg");
+    /* background-image: url("./Assests/Images/photo9.jpg"); */
+    background-image: url("../SwaasIcons/photo9.jpg");
+
     background-size: cover;
     margin: 0;
     height: 190px;

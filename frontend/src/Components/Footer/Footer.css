@@ -14,7 +14,9 @@
     margin-left: 33rem;
 
     background-size: cover;
-    background-image: url("./Images/logo4-removebg-preview\ 1.png");
+    /* background-image: url("./Images/logo4-removebg-preview\ 1.png"); */
+    background-image: url("../SwaasIcons/logo4-removebg-preview\ 1.png");
+
     height: 175px;
     width: 300px;
 }

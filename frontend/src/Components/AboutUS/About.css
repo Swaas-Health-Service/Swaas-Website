@@ -3,14 +3,15 @@
     padding: 0;
 }
 .swaaslogo{
-    background-image: url("./Images/swaaslogo.png");
+    /* background-image: url("./Images/swaaslogo.png"); */
+    background-image: url("../SwaasIcons/swaaslogo.png");
     background-size: cover;
     height: 75px;
     width: 150px;
     margin-left: 1rem ;
 }
 .profile-photo{
-    background-image: url("./Images/usercircle.png");
+    background-image: url("../SwaasIcons/profile-photo.png");
     background-size: cover;
     height: 80px;
     width: 80px;
@@ -59,7 +60,8 @@ a:hover {
 }
 .mottopic {
     /* margin-right: 300px; */
-    background-image: url("./Images/motto.png");
+    /* background-image: url("./Images/motto.png"); */
+    background-image: url("../SwaasIcons/motto.png");
     background-size: cover;
     width: 4000px;
 height: 260px;
@@ -77,7 +79,9 @@ height: 260px;
 }
 .aboutpic {
     /* margin-left: 300px; */
-    background-image: url("./Images/aboutuspic.png");
+    /* background-image: url("./Images/aboutuspic.png"); */
+    background-image: url("../SwaasIcons/aboutuspic.png");
+
     background-size: cover;
     width: 4000px;
     height: 408px;
@@ -96,7 +100,9 @@ height: 260px;
 }
 .foundingpic {
     /* margin-right: 300px; */
-    background-image: url("./Images/foundingstory.png");
+    /* background-image: url("./Images/foundingstory.png"); */
+    background-image: url("../SwaasIcons/foundingstory.png");
+
     background-size: cover;
     width: 4000px;
     height: 385px;

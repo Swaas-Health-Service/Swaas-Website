@@ -15,14 +15,18 @@ body{
     margin: 0;
 }
 .logo{
-    background-image: url("./Assets/Images/logo.png");
+    /* background-image: url("./Assets/Images/logo.png"); */
+    background-image: url("../SwaasIcons/logo.png");
+
     background-size: cover;
     height: 75px;
     width: 150px;
     margin-left: 1rem ;
 }
 .profile-photo{
-    background-image: url("./Assets/Images/profile-photo.png");
+    /* background-image: url("./Assets/Images/profile-photo.png"); */
+    background-image: url("../SwaasIcons/profile-photo.png");
+
     background-size: cover;
     height: 80px;
     width: 80px;
@@ -43,7 +47,7 @@ body{
     padding-top: 0;
 }
 .photo1{
-    background-image: url("./Assets/Images/photo1.jpg");
+    background-image: url("../SwaasIcons/photo1.jpg");
     background-size:cover;
     height:auto;
     width: 35vw;
@@ -103,7 +107,7 @@ text-align: center;
     margin-left: 19%;
 }
 .photo2Mental{
-    background-image: url("./Assets/Images/photo2.jpeg");
+    background-image: url("../SwaasIcons/photo2.jpeg");
     background-size: cover;
     height: 300px;
     width: 400px;

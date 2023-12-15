@@ -1,5 +1,7 @@
 .logo{
-    background-image: url("./logo.png");
+    /* background-image: url("./logo.png"); */
+    background-image: url("../SwaasIcons/logo.png");
+
     background-size: cover;
     height: 75px;
     width: 150px;

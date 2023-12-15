@@ -78,36 +78,53 @@ h1 {
     margin-top: 60px;
     width: 180px;
     height: 269px;
-background-image: url("./Images/tooth.png");
+/* background-image: url("./images/tooth.png"); */
+background-image: url("../SwaasIcons/tooth.png");
+
 background-size: cover;
 }
 .stethoscope {
     margin-top: 120px;
     width: 180px;
     height: 210px;
-background-image: url("./Images/stethoscope.png");background-size: cover;
+/* background-image: url("./images/stethoscope.png"); */
+background-image: url("../SwaasIcons/stethoscope.png");
+
+background-size: cover;
 }
 .hand {
     margin-top: 60px;
     width: 180px;
     height: 200px;
-background-image: url("./Images/hand.png");background-size: cover;
+/* background-image: url("./images/hand.png"); */
+background-image: url("../SwaasIcons/hand.png");
+
+background-size: cover;
 }
 .bed{
     margin-top: 120px;
     width: 180px;
     height: 200px;
-background-image: url("./Images/bed.png");background-size: cover;
+/* background-image: url("./images/bed.png"); */
+background-image: url("../SwaasIcons/bed.png");
+
+background-size: cover;
 }
 .homeo {
     margin-top: 60px;
     width: 180px;
     height: 200px;
-background-image: url("./Images/homeo.png");background-size: cover;
+/* background-image: url("./images/homeo.png"); */
+background-image: url("../SwaasIcons/homeo.png");
+
+background-size: cover;
 }
 .yoga {
     margin-top: 120px;
     width: 180px;
 height: 200px;
-background-image: url("./Images/yoga.png");background-size: cover;
+/* background-image: url("./images/yoga.png"); */
+background-image: url("../SwaasIcons/yoga.png");
+
+background-size: cover;
 }

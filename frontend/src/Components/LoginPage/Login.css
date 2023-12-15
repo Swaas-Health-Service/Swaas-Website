@@ -13,14 +13,18 @@
     margin: 0;
 }
 .logo{
-    background-image: url("./Images/swaaslogo.png");
+    /* background-image: url("./Images/swaaslogo.png"); */
+    background-image: url("../SwaasIcons/logo.png");
+
     background-size: cover;
     height: 75px;
     width: 150px;
     margin-left: 1rem ;
 }
 .profile-photo{
-    background-image: url("./Images/handplus.png");
+    /* background-image: url("./Images/handplus.png"); */
+    background-image: url("../SwaasIcons/handplus.png");
+
     background-size: cover;
     height: 80px;
     width: 80px;
@@ -30,7 +34,9 @@ body {
     background: #CAF4F4;
 }
 .loginpic{
-    background-image: url("./Images/loginpic.png");
+    /* background-image: url("./Images/loginpic.png"); */
+    background-image: url("../SwaasIcons/loginpic.png");
+
     width: 500px;
 height: 550px;
 background-size: cover;

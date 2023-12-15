@@ -98,14 +98,12 @@ router.post('/patient-login',async(req,res)=>{
         if (!useremail || !usermobilenumber) {
             res.status(422).send({ message: "Invalid Email or Mobile Number" });
         }
-
         const validPassword=await bcrypt.compare(password,useremail.password || usermobilenumber.password);
         if(!validPassword){
             res.status(422).send({message:"Invalid Password"});
         }
-
         const token=await useremail.generateAuthToken();
-        res.status(200).send({data:token,message:"Patient Logged In Successfully"});
+        res.status(200).send({data:{useremail,token},message:"Patient Logged In Successfully"});
     } catch (error) {
         res.status(500).send({message:"Internal Server Error"});
     }
@@ -222,4 +220,6 @@ router.post("password-reset/:id/:token", async (req, res) => {
 		res.status(500).send({ message: "Internal Server Error" });
 	}
 });
+
+
 module.exports=router;

@@ -26,7 +26,7 @@ const Teleconsultation = () => {
             </div>
         </div>
         <div className="photo1Tele"></div>
-    </div>
+    </div >
     <div className="specialities">
         <div className="heading-specialities">
             <h2>Specialities</h2>

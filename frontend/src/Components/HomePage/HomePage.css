@@ -13,9 +13,31 @@
     border-top-right-radius: 4px;
     display: flex;
     justify-content: space-between;
+    /* position: -webkit-sticky; */
+}
+.dropdown{
+    background-image: url("../SwaasIcons/icons8-list-48.png");
+    height:3rem;
+    width:3rem;
+    display: none;
+}
+@media screen and (max-width:480px) {
+    .dropdown{
+        display: block;
+    }
+    .navbar-elements{
+        display: none;
+    }
+    .nav-bar{
+        display: none;
+        width:0;
+    }
+    
 }
 .logo{
-    background-image: url("./Assets/Images/logo.png");
+    /* background-image: url("./Assets/Images/logo.png"); */
+    background-image: url("../SwaasIcons/logo.png");
+
     background-size: cover;
     height: 70px;
     width:150px;
@@ -45,7 +67,9 @@
     /* margin-top: 8px; */
     height: 80px;
     width: 80px;
-    background-image: url("./Assets/Images/profile-photo.png");
+    /* background-image: url("./Assets/Images/profile-photo.png"); */
+    background-image: url("../SwaasIcons/profile-photo.png");
+
     background-size: cover;
     margin-left: 8rem;
     margin-right: 2rem;
@@ -85,8 +109,10 @@ body{
     border-radius: 1rem;
 }
 .image-info1{
-    background-image: url("./Assets/Images/Download_Doctors_Concept_Illustration_for_free-removebg-preview\ 1.png");
+    /* background-image: url("./Assets/Images/Download_Doctors_Concept_Illustration_for_free-removebg-preview\ 1.png"); */
     background-size: cover;
+    background-image: url("../SwaasIcons/Download_Doctors_Concept_Illustration_for_free-removebg-preview\ 1.png");
+
     height: 450px;
     width: 450px;
     margin: 0px;
@@ -143,7 +169,9 @@ line-height: normal;
 .img-com1{
     height: 250px;
     width: 210px;
-    background-image: url("./Assets/Images/Emergency.png");
+    /* background-image: url("./Assets/Images/Emergency.png"); */
+    background-image: url("../SwaasIcons/Emergency.png");
+
     background-size: cover;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -151,7 +179,9 @@ line-height: normal;
 .img-com2{
     height: 250px;
     width: 210px;
-    background-image: url("./Assets/Images/TeleConsultation-removebg-preview.png");
+    /* background-image: url("./Assets/Images/TeleConsultation-removebg-preview.png"); */
+    background-image: url("../SwaasIcons/TeleConsultation-removebg-preview.png");
+
     background-size: cover;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -159,7 +189,9 @@ line-height: normal;
 .img-com3{
     height: 250px;
     width: 210px;
-    background-image: url("./Assets/Images/home4-removebg.png");
+    background-image: url("../SwaasIcons/home4-removebg.png");
+
+    /* background-image: url("./Assets/Images/home4-removebg.png"); */
     /* background-size: cover; */
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -167,7 +199,9 @@ line-height: normal;
 .img-com4{
     height: 250px;
     width: 210px;
-    background-image: url("./Assets/Images/Reports.png");
+    /* background-image: url("./Assets/Images/Reports.png"); */
+    background-image: url("../SwaasIcons/Reports.png");
+
     background-size: cover;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -189,7 +223,9 @@ justify-content: center;
     color: #906E69;
 }
 .image-info2{
-    background-image: url("./Assets/Images/home6.png");
+    /* background-image: url("./Assets/Images/home6.png"); */
+    background-image: url("../SwaasIcons/home6.png");
+
     background-size: cover;
     height: 450px;
     width: 490px;
@@ -198,7 +234,9 @@ justify-content: center;
     border-bottom-left-radius: 1rem;
 }
 .image-info3{
-    background-image: url("./Assets/Images/BillsandInsuarance.png");
+    /* background-image: url("./Assets/Images/BillsandInsuarance.png"); */
+    background-image: url("../SwaasIcons/BillsandInsuarance.png");
+
     background-size:cover;
     height: 62vh;
     width: 25vw;
@@ -207,7 +245,9 @@ justify-content: center;
     border-bottom-right-radius: 1rem;
 }
 .image-info4{
-    background-image: url("./Assets/Images/home8.png");
+    /* background-image: url("./Assets/Images/home8.png"); */
+    background-image: url("../SwaasIcons/home8.png");
+
     background-size: cover;
     height: 450px;
     width: 480px;
@@ -256,7 +296,9 @@ color: linear-gradient(270deg, #12ec33 0%, #0688ce 100%);}
     margin-left: 35rem;
 
     background-size: cover;
-    background-image: url("./Assets/Images/logo4-removebg-preview\ 1.png");
+    /* background-image: url("./Assets/Images/logo4-removebg-preview\ 1.png"); */
+    background-image: url("../SwaasIcons/logo4-removebg-preview\ 1.png");
+
     height: 175px;
     width: 300px;
 }
