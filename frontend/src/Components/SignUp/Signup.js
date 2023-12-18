@@ -3,6 +3,7 @@ import {Link} from "react-router-dom"
 import Logo from '../Logo/Logo'
 
 import "./Signup.css"
+import PLogo from '../ProfileLogo/PLogo'
 const Signup = () => {
   return (
     <div>
@@ -10,7 +11,8 @@ const Signup = () => {
         {/* <div className="logo"></div> */}
         <Link to="/"><Logo/></Link>
 
-        <div className="profile-photo"></div>
+        {/* <div className="profile-photo"></div> */}
+        <Link to="/Profile"><PLogo/></Link>
       </header>
       <div className="signup-sidebar">
         <div className="signup-heading">Company Moto</div>

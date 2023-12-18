@@ -14,24 +14,7 @@ header{
     border-top-right-radius: 4px;
     margin: 0;
 }
-.logo{
-    /* background-image: url("./Images/logo.png"); */
-    background-image: url("../SwaasIcons/logo.png");
 
-    background-size: cover;
-    height: 80px;
-    width: 160px;
-    margin-left: 1rem ;
-}
-.profile-photo{
-    /* background-image: url("./Images/profile-photo.png"); */
-    background-image: url("../SwaasIcons/profile-photo.png");
-
-    background-size: cover;
-    height: 80px;
-    width: 80px;
-    margin-right: 3rem;
-}
 .signup-sidebar{
     height:110vh;
     width: 30vw;

@@ -7,10 +7,9 @@ import {Link} from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav>        <div className="logo">
-          {/* <img src={Logo} alt=''/> */}
+      <nav>       
           <Logo/>
-        </div>
+        
         <div className="services">
 
             <Link to="/OPD">OPD Booking</Link>

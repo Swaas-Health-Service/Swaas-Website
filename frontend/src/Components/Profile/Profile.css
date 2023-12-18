@@ -14,15 +14,6 @@ body{
   border-top-right-radius: 4px;
   margin: 0;
 }
-.logo{
-  /* background-image: url("./Assests/Images/logo.png"); */
-  background-image: url("../SwaasIcons/logo.png");
-
-  background-size: cover;
-  height: 75px;
-  width: 150px;
-  margin-left: 1rem ;
-}
 
 
 
@@ -94,15 +85,7 @@ body{
 
 
 /* ------------------------------------> */
-.profile-photo{
-  /* background-image: url("./Assests/Images/profile-photo.png"); */
-  background-image: url("../SwaasIcons/profile-photo.png");
 
-  background-size: cover;
-  height: 80px;
-  width: 80px;
-  margin-right: 3rem;
-}
 .sidebar{
   height: 70rem;
   width: 20rem;

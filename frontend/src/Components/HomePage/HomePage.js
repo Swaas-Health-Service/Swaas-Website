@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import "./HomePage.css";
 import { Link } from 'react-router-dom';
 import Footer from "../Footer/Footer"
 import Review from '../Review/Review';
 import PLogo from "../ProfileLogo/PLogo"
+import Logo from "../Logo/Logo"
 const HomePage = () => {
+   
   return (
     <>
-      <header className='headerHome'>
-        <div className="dropdown">
-        <Link to='OPD'><div className='navbar-elements'>OPD Booking</div></Link>
-            <Link to='Teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
-            <Link to='/MedicalReports'><div className='navbar-elements'>Medical Reports</div> </Link>
-            <Link to='/BillsandInsuarance'><div className='navbar-elements'>Insurance</div></Link>
-
+      <header className='headerHome' >
+        <div className="dropdown" >
+        
         </div>
-        <div className="logo"></div>
+        <Logo/>
         <div className="nav-bar">
 
             <Link to='OPD'><div className='navbar-elements'>OPD Booking</div></Link>
@@ -24,7 +22,6 @@ const HomePage = () => {
             <Link to='/BillsandInsuarance'><div className='navbar-elements'>Insurance</div></Link>
 
         </div>
-        {/* <div className="photoHome"></div> */}
         <Link to="/Profile"><PLogo/></Link>
     </header>
     <div className="infoHome">
@@ -70,14 +67,14 @@ const HomePage = () => {
         <div className="text-infoHome">
             <div className="msg">OPD Booking</div>
             <p>OPD Booking on our website allows you to conviniently schedule non emergency medical appointment with your preffered healthcare providers,ensuring timly access to outpatient healthcare services.</p>
-        <button id="toknow">< Link to="OPD">Click here</Link></button>
+        <button id="toknow2">< Link to="OPD">Click here</Link></button>
         </div>
         </div>
         <div className="infoHome2">
             <div className="text-infoHome">
                 <div className="msg">Bills & Insurance</div>
                 <p>On our website,delve into the intricacies of medical bills and insurance to gain insights into healthcare expenses and discover how insurance plays a vital role in managing and reducing these costs. </p>
-                <button id="toknow">< Link to="BillsandInsuarance">Click here</Link></button>
+                <button id="toknow2">< Link to="BillsandInsuarance">Click here</Link></button>
             </div>
             <div className="image-info3"></div>
         </div>
@@ -86,7 +83,7 @@ const HomePage = () => {
             <div className="text-infoHome">
                 <div className="msg">Medical shop</div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic vel architecto unde. Pariatur aspernatur, tempora quisquam quasi ut architecto, quia et a, aperiam consequuntur at omnis consectetur enim ex? </p>
-                <button id="toknow">< Link to="MedicineNew">Click here</Link></button>
+                <button id="toknow2">< Link to="MedicineNew">Click here</Link></button>
             </div>
         </div>
         <div className="blank"></div>
