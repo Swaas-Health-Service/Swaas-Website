@@ -11,17 +11,20 @@ const About = () => {
       <nav>
         {/* <div className="swaaslogo">
         </div> */}
-                <Link to="/"><Logo/></Link>
+                <div className="dropdown" ></div>
 
-        <div><a style={{color:" #0D6869"}} href="/">Features</a></div>
-        <div><a style={{color:" #0D6869"}} href="/">Industries</a></div>
-        <div><a style={{color:" #0D6869"}}href="/">Contact us</a></div>
-        <div><a style={{color:" #0D6869"}}href="/">Reviews</a></div>
-        <div><a style={{color:" #0D6869"}}href="/">Complain</a></div>
-        <div><a style={{color:" #0D6869"}}href="/">Join us</a></div>
+                <Link to="/"><Logo/></Link>
+                <div className="nav-barAbout">
+        <div className='navbar-elementsAbout'><a style={{color:" #0D6869"}} href="/">Features</a></div>
+        <div className='navbar-elementsAbout'><a style={{color:" #0D6869"}} href="/">Industries</a></div>
+        <div className='navbar-elementsAbout'><a style={{color:" #0D6869"}}href="/">Contact us</a></div>
+        <div className='navbar-elementsAbout'><a style={{color:" #0D6869"}}href="/">Reviews</a></div>
+        <div className='navbar-elementsAbout'><a style={{color:" #0D6869"}}href="/">Complain</a></div>
+        <div className='navbar-elementsAbout'><a style={{color:" #0D6869"}}href="/">Join us</a></div>
         {/* <div className='profile-photo' >
             
         </div> */}
+        </div>
         <Link to="/Profile" ><PLogo/></Link>
     </nav>
     <div id="mission">

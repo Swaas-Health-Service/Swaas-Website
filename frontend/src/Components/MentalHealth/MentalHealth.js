@@ -15,7 +15,7 @@ const MentalHealth = () => {
         <Link to="/Profile"><PLogo/></Link>
       </header>
       <main className='Main'>
-          <div className="info">
+          <div className="infoMental">
               <div className="heading">
                   <p className="HI HI1">Discover Mental Health Care</p>
                   <p className="HI HI2">Solution</p>

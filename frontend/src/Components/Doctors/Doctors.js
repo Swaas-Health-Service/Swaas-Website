@@ -10,9 +10,9 @@ const Doctors = () => {
        <header className="header">
         {/* <div className="logo"></div> */}
         <Link to="/"><Logo/></Link>
-<Link to="/Profile"><PLogo/></Link>
+        <Link to="/Profile"><PLogo/></Link>
         {/* <div className="profile-photo"></div> */}
-    </header >
+    </header>
     <div className="infoDoc">XXX Available Doctors Now </div>
     <div className="profileDoc-info">
         <div className="photoDoc"></div>

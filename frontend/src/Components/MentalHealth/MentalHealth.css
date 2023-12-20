@@ -22,7 +22,7 @@ body{
     background-color: #CAEFD1;
     display: flex;
 }
-.info{
+.infoMental{
     height: inherit;
     width: 40vw;
     margin-left: 1.5rem;
@@ -183,4 +183,100 @@ text-align: center;
     width: 100vw;
     background:linear-gradient(#99E5A2,#41D8DD);
     margin-top: 10rem;
+}
+@media screen and (max-width:900px) {
+    .Main{
+        display: block;
+        width: 100%;
+        /* height: 56vh; */
+    }
+    .infoMental{
+        width: 100%;
+        margin-left: 0;
+/* height:28vh; */
+    }
+    .info2{
+        width: 100%;
+  margin: 0;
+  display: block;
+    }
+    .INF-H{
+        font-size: 1.5rem;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+    }
+    .HI {
+        font-size: 1.5rem;
+    }
+    .info1{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    #button1{
+        margin: 0;
+    margin-top: 0px;
+  margin-top: 1rem;
+  width: 11rem;
+  height: fit-content;
+    font-size: 1.2rem;
+    padding: revert;
+    }
+    .photo1{
+        position: relative;
+    height: 11rem;
+    width: 12rem;
+    margin: 0 auto;
+    /* left: 6rem; */
+    top: 0;
+    }
+    .photo2Mental{
+        position: relative;
+        height: 10rem;
+        width: 12rem;
+        margin: 0 auto;
+  /* left: 5.5rem;
+
+  top: 51rem; */
+    }
+    .info2{
+        width: 100%;
+        display: block;
+        height: fit-content;
+    }
+    .info3{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        height: fit-content;
+
+    }
+    #button2{
+        margin: 0;
+    }
+    .nav{
+        display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 0;
+  width: 100%;
+  height:fit-content;
+    }
+    .nav1{
+        margin: auto;
+        height:2.5rem;
+        width:10rem;
+        
+        text-align: center;
+    }
+    .nav1 a{
+        font-size: 1rem;
+        margin:0;
+        font-weight: 600;
+      
+
+    }
+    .review{
+        margin-top: 0;
+    }
+    
 }

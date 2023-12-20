@@ -19,8 +19,8 @@ const Emergency = () => {
         <div>
             <h1>Emergency Medical Book Page</h1> 
             <p>Medical emergency? Contact with us in 60 seconds</p> 
-            <button id="bookmedical" style={{marginLeft:"10rem"}}><a href="">Book Now</a></button>
-        </div>
+          <div className="Adi">  <button id="bookmedical" ><a href="">Book Now</a></button>
+          </div> </div>
         <div className='medicalbookpic'>
                   </div>
     </div>

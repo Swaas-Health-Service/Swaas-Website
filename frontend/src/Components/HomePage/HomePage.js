@@ -28,8 +28,8 @@ const HomePage = () => {
         <div className="text-infoHome">
             <div className="msg">We Are Ready To Help & Take Care Of Your Medical Health</div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque quos debitis dignissimos quam nam rerum quis voluptatum minus totam beatae, non, provident unde velit labore sapiente fugiat ea veritatis.</p>
-        <button style={{color:"#0D6869"}}id="toknow"><Link to='/About'>Know About Us</Link></button>
-        </div>
+        <div className='Adi'><button style={{color:"#0D6869"}}id="toknow"><Link to='/About'>Know About Us</Link></button>
+        </div> </div>
         <div className="image-info1"></div>
     </div>
     <div className="communicationHome">
@@ -67,15 +67,15 @@ const HomePage = () => {
         <div className="text-infoHome">
             <div className="msg">OPD Booking</div>
             <p>OPD Booking on our website allows you to conviniently schedule non emergency medical appointment with your preffered healthcare providers,ensuring timly access to outpatient healthcare services.</p>
-        <button id="toknow2">< Link to="OPD">Click here</Link></button>
-        </div>
+      <div className="Adi">  <button id="toknow2">< Link to="OPD">Click here</Link></button>
+      </div> </div>
         </div>
         <div className="infoHome2">
             <div className="text-infoHome">
                 <div className="msg">Bills & Insurance</div>
                 <p>On our website,delve into the intricacies of medical bills and insurance to gain insights into healthcare expenses and discover how insurance plays a vital role in managing and reducing these costs. </p>
-                <button id="toknow2">< Link to="BillsandInsuarance">Click here</Link></button>
-            </div>
+               <div className="Adi"> <button id="toknow2">< Link to="BillsandInsuarance">Click here</Link></button>
+               </div>  </div>
             <div className="image-info3"></div>
         </div>
         <div className="infoHome2">
@@ -83,8 +83,8 @@ const HomePage = () => {
             <div className="text-infoHome">
                 <div className="msg">Medical shop</div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic vel architecto unde. Pariatur aspernatur, tempora quisquam quasi ut architecto, quia et a, aperiam consequuntur at omnis consectetur enim ex? </p>
-                <button id="toknow2">< Link to="MedicineNew">Click here</Link></button>
-            </div>
+                <div className="Adi"><button id="toknow2">< Link to="MedicineNew">Click here</Link></button>
+                </div> </div>
         </div>
         <div className="blank"></div>
         <Review/>

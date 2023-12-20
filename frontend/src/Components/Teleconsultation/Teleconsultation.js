@@ -21,8 +21,8 @@ const Teleconsultation = () => {
                <p className="TeleHI2">Take Online Doctor Consultation</p>
                <p className="Teleinfo1">Private Consultation + Audio Call : Starts at just 199</p>
                <p  className="Teleinfo1">+ 124 Doctors are online</p>
-               <div className="button" id="button1">Consult Now</div>
-               <p className="infoLinks"> <a href="/" className="VD">Verified Doctors</a> <a href="/" className="DP">Digital Prescription</a> <a className="FF" href="/">Free Fellowship</a>  </p>
+              <div className="Adi"> <div className="button" id="button1">Consult Now</div>
+              </div> <p className="infoLinks"> <a href="/" className="VD">Verified Doctors</a> <a href="/" className="DP">Digital Prescription</a> <a className="FF" href="/">Free Fellowship</a>  </p>
             </div>
         </div>
         <div className="photo1Tele"></div>

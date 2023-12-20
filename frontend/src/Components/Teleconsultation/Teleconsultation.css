@@ -235,3 +235,149 @@ margin-bottom: 0;
     background:linear-gradient(#99E5A2,#41D8DD);
     margin-top: 10rem;
 }
+@media screen and (max-width:900px)  {
+    .mainTele{
+        width: 100vw;
+        height: fit-content;
+        margin-top: 2rem;
+        display:block;
+    }
+    .headingTele{
+        text-align: center;
+    }
+    .Teleinfo{
+        height: fit-content;
+        margin-left: 0;
+        width: 100%;
+    }
+    .heading-specialities{
+        height: fit-content;
+    }
+    .TeleHI1,.TeleHI2{
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+    .button{
+        font-size: 1rem;
+        margin-left: 8.5rem;
+        height:2rem;
+        width: 7.5rem;
+        padding-top: 0.3rem;
+        margin-top: 1rem;
+    }
+    .DP,.FF{
+        margin-left: 1rem;
+    }
+    .Teleinfo1{
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    .infoLinks{
+        margin-top: 1rem;
+
+    }
+    .photo1Tele{
+        position: relative;
+        height: 9rem;
+        width: 10rem;
+        /* top:19rem; */
+margin: 0 auto;    }
+    /* .communication{
+        display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height:fit-content;
+  margin:1rem;
+  left:0;
+  width:100%;
+    } */
+    .specialities{
+        height: fit-content;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .specialities h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .specialities p{
+        text-align: center;
+    }
+    
+    .photo2,.photo3,.photo4,.photo5{
+        height:9rem;
+        width: 10rem;
+    }
+    .photo6,.photo7,.photo8,.photo9{
+        height:10rem;
+        width:10rem;
+    }
+    .review{
+        margin-top: 3rem;
+    }
+    .info-com{
+        padding: 4px;
+    }
+}
+@media screen and (min-width:780px ) and (max-width:900px) {
+    .communication{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        height:fit-content;
+        margin:1rem;
+        left:0;
+        width:100%;
+      }
+      .comm1{
+        height:14rem;
+        width: 11rem;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:539px) and (max-width:780px) {
+    .communication{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        height:fit-content;
+        margin:1rem;
+        left:0;
+        width:100%;
+      }
+      .comm1{
+        height:14rem;
+        width: 11rem;
+        margin: 0 auto;
+    }}
+      @media screen and (min-width:375px) and (max-width:539px) {
+        .communication{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            height:fit-content;
+            margin:1rem;
+            left:0;
+            width:100%;
+          }
+          .comm1{
+            height:fit-content;
+            width: 11rem;
+            margin: 0 ;
+        }}
+        @media screen and (max-width:375px) {
+            .communication{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+                height:fit-content;
+                margin:1rem 0.5rem;
+                left:0;
+                width:100%;
+              }
+              .comm1{
+                height:fit-content;
+                width: 11rem;
+                margin: 0  auto;
+            }}

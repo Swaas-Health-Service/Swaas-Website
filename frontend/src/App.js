@@ -11,13 +11,10 @@ import Teleconsultation from "./Components/Teleconsultation/Teleconsultation"
 import Doctors from "./Components/Doctors/Doctors"
 import About from "./Components/AboutUS/About"
 import MedicineNew from "./Components/Medicine-New/MedicineNew"
-
-
 import {
   BrowserRouter as Main,
   Routes,
   Route
-  
 } from "react-router-dom";
 
 const App = () => {
