@@ -5,7 +5,7 @@ require("dotenv").config();
 const router=new express.Router();
 const bcrypt=require('bcrypt');
 const crypto=require("crypto");
-import JOI from "joi";
+const JOI=require("joi")
 const {Patient,validateRegistration,validateLogin}=require('../Models/PatientSchema');
 const Token=require('../Models/TokenSchema');
 const validateToken=require('../Utils/validateToken');
@@ -219,5 +219,6 @@ router.post("password-reset/:id/:token", async (req, res) => {
 		res.status(500).send({ message: "Internal Server Error" });
 	}
 });
+
 
 module.exports=router;
