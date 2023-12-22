@@ -11,7 +11,9 @@ import Teleconsultation from "./Components/Teleconsultation/Teleconsultation"
 import Doctors from "./Components/Doctors/Doctors"
 import About from "./Components/AboutUS/About"
 import MedicineNew from "./Components/Medicine-New/MedicineNew"
-
+import Sidebar from "./Components/hospital/Hospital.js"
+import DoctorSignIn from "./Components/hospital/DoctorSign-in/Doctor.js"
+import PatientSignIn from "./Components/hospital/HospitalSignIn/PatientSign.js"
 
 import {
   BrowserRouter as Main,
@@ -40,7 +42,9 @@ const App = () => {
           <Route exact path='/SignUp' element={<SignUp/>}/>       
           <Route exact path='/Teleconsultation' element={<Teleconsultation/>}/> 
           <Route exact path='/Doctors' element={<Doctors/>}/> 
-
+          <Route exact path='/Patient' element={<Sidebar/>}/>
+          <Route exact path='/Doctor-SignIN' element={<DoctorSignIn/>}/>
+          <Route exact path='/Patient-SignIN' element={<PatientSignIn/>}/>
         </Routes>
       </Main>
     </div>
