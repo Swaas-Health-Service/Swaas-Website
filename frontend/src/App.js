@@ -19,6 +19,9 @@ import {
   Route
   
 } from "react-router-dom";
+import PatientDetails from "./Components/Hospital/PatientList/PatientDetails"
+import Register from "./Components/Hospital/PatientList/Signuplogin/SignupLogin"
+import LoginPatient from "./Components/Hospital/PatientList/Signuplogin/LoginPatient"
 
 const App = () => {
   return (
@@ -40,7 +43,11 @@ const App = () => {
           <Route exact path='/SignUp' element={<SignUp/>}/>       
           <Route exact path='/Teleconsultation' element={<Teleconsultation/>}/> 
           <Route exact path='/Doctors' element={<Doctors/>}/> 
-
+          <Route exact path='/Patient' element={<PatientDetails/>}/>
+          <Route exact path='/Register' element={<Register/>}/>
+          <Route exact path='/Loginpatient' element={<LoginPatient/>}/>
+          <Route exact path='/Logindoctor' element={<LoginPatient/>}/>
+          <Route exact path='/Loginhospital' element={<LoginPatient/>}/>
         </Routes>
       </Main>
     </div>

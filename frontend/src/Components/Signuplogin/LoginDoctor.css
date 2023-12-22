@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.loginbodypat {
+    height: 100vh;
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDE1LXJtMjA4LTA0LmpwZw.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.loginbox {
+    background-image: url('https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30vh;
+    width: 40vw;
+    
+}
+.enterbox {
+    height: 5vh;
+    margin: 1vh;
+    width: 20vw;
+    border-radius: 20px;
+    padding-left: 1vw;
+    border: none;
+}
+.forgotpass {
+    color: blue;
+}
+.loginhead {
+    padding-left: 46vw;
+    padding-top: 25vh;
+    padding-bottom: 5vh;
+    font-weight: 900;
+    font-size: x-large;
+}
+.loginhorizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.docsymbol {
+    height: 30vh;
+    width: 15vw;
+    background-image: url('G:\SWAAS\Swaas-Website\frontend\src\Components\Hospital\PatientList\Signuplogin\doctorsymbol.gif');
+    background-repeat: no-repeat;    
+}
