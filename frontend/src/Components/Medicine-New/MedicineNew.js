@@ -10,12 +10,12 @@ const MedicineNew = () => {
     <div>
       <header>
         {/* <div class="logo"></div> */}
-        <Link to="/"><Logo/></Link>
-
+        <div className="medLogo"><Link to="/"><Logo/></Link>
+        </div>
         <input type="search" class="med-search" placeholder=" Search for medicines and more"/>
         <button class="cart"> <i class="fa-solid fa-cart-plus"></i> View Cart</button>
         {/* <div class="profile-photo"></div> */}
-        <Link to="/Profile"><PLogo/></Link>
+       <div className="medProfile"> <Link to="/Profile"><PLogo/></Link></div>
     </header>
     <div className="medi">
     <div class="main-head">Browse Medicines and Health Products</div>
@@ -38,7 +38,7 @@ const MedicineNew = () => {
         </div>
     </div>
     </div>
-    <Review/>
+   <div className="medReview"> <Review/></div>
     {/* <div className="review">
           <p>Reviews</p>
       </div> */}

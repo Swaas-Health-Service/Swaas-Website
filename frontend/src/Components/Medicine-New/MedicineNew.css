@@ -111,3 +111,152 @@ margin-left: 4rem;
     background:linear-gradient(#99E5A2,#41D8DD);
     margin-top: 10rem;
 }
+@media screen and (min-width:780px ) and (max-width:900px) {
+    .med-img-div{
+        display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  height:fit-content;
+  margin-top:1rem ;
+  margin: 1rem auto;
+  left:0;
+  width:100%;
+      }
+      .med-img1,.med-img2,.med-img3,.med-img4{
+        
+        margin: 1rem auto;
+        height: 10rem;
+        width: 12rem;
+}
+.med-search{
+    height: 3rem;
+    width: 20rem;
+}
+.cart{
+    height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+}
+@media screen and (min-width:588px) and (max-width:780px) {
+    .med-search{
+        height: 3rem;
+        width: 15rem;
+        
+    }
+    .cart{
+        height: 3rem;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 3rem;
+    }
+    .med-img-div{
+        display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height:fit-content;
+  margin-top:1rem ;
+  margin: 1rem auto;
+  left:0;
+  width:100%;
+      }
+      .med-img1,.med-img2,.med-img3,.med-img4{
+        
+        margin: 1rem auto;
+        height: 10rem;
+        width: 12rem;
+}}
+
+@media screen and (min-width:377px) and (max-width:588px) {
+    .med-img-div{
+        display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height:fit-content;
+  margin-top:1rem ;
+  margin: 1rem auto;
+  left:0;
+  width:100%;
+      }
+      .med-search{
+        height: 3rem;
+        width: 19rem;
+        margin-left: 1rem;
+        
+    }
+    .cart{
+        height: 3rem;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 3rem;
+      margin-right: 1rem;
+    }
+    .medProfile{
+        display: none;
+    }
+    .medLogo{
+        display: none;
+    }
+      .med-img1,.med-img2,.med-img3,.med-img4{
+        
+        margin: 1rem auto;
+        height: 10rem;
+        width: 12rem;
+}}
+ 
+@media screen  and (max-width:377px) {
+    .med-img-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+      }
+      .med-search{
+        height: 3rem;
+        width: 15rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    .cart{
+        height: 3rem;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 3rem;
+      margin-right: 1rem;
+    }
+    .medProfile,.medLogo{
+        display: none;
+    }
+
+.medLogo{display: none;}
+
+    .med-img1,.med-img2,.med-img3,.med-img4{
+        
+            margin: 1rem auto;
+            height: 10rem;
+            width: 12rem;
+    }}
+@media screen and (max-width:900px) {
+    .medi{
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .main-head{font-size: 1.5rem;
+        margin: 0;
+        text-align: center;}
+        
+.med-health{
+    margin: 0;
+  width: 100%;
+  height: fit-content;
+}
+.health-head{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+}

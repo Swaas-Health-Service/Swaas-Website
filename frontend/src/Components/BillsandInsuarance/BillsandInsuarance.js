@@ -18,7 +18,7 @@ const BillsandInsuarance = () => {
       </header>
 
           <div id="bills">
-        <div className='billimg'></div>
+       <div className="Adi"> <div className='billimg'></div></div>
         <div id="billtext">
             <h1>Pay The Bills Online, Safe and Secured</h1>
             <h2>Simplify medical bill payments online</h2>
@@ -34,9 +34,9 @@ const BillsandInsuarance = () => {
             <h2>When the unexpected happens, we are here for you.</h2> 
             <p style={{color:"#6999B3",fontSize:"1.1rem"}}>You can enroll in or change plans if you have cerain life events or income range, or you qualify for Medical or CHIP</p>
             
-            <button id="insure" style={{marginLeft:"240px"}}><a href="/">Get Started</a></button>
+            <div className="Adi"><button id="insure" ><a href="/">Get Started</a></button></div>
         </div>
-        <div className='insuranceimg'>
+        <div className="Adi"><div className='insuranceimg'></div>
         </div>
     </div>
     

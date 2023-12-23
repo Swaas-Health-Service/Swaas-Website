@@ -21,7 +21,7 @@ const MentalHealth = () => {
                   <p className="HI HI2">Solution</p>
                   <p className="info1">Online Councilling Threapy With Top</p>
                   <p  className="info1">Physiologist Any time, Any where, Any device</p>
-                  <button className="button" id="button1">View Our Counselor</button>
+                  <button className="buttonMental" id="button1">View Our Counselor</button>
               </div>   
           </div>
           <div className="photo1"></div>

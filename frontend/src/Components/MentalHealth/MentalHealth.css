@@ -17,10 +17,11 @@ body{
 
 .Main{
     margin-top: 3vw;
-    width: 80vw;
-    height: inherit;
+    width: 100%;
+    height: fit-content;
     background-color: #CAEFD1;
     display: flex;
+    justify-content: space-between;
 }
 .infoMental{
     height: inherit;
@@ -32,8 +33,8 @@ body{
 .photo1{
     background-image: url("../SwaasIcons/photo1.jpg");
     background-size:cover;
-    height:auto;
-    width: 35vw;
+    height:57vh;
+    width: 29vw;
    
 }
 .HI{
@@ -57,7 +58,7 @@ text-align: center;
     margin-bottom: 0;
     text-align: center;
 }
-.button{
+.buttonMental{
     height: 3rem;
     width: 14rem;
     text-align: center;
@@ -70,6 +71,7 @@ text-align: center;
     margin-left: 36%;
     border: none;
     margin-top: 2rem;
+    margin-left: 0;
 }
 .INF-H{
     text-align: center;
@@ -81,36 +83,38 @@ text-align: center;
 }
 .info2{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: inherit;
-    width: 60vw;
+    width: 100vw;
     border-radius: 1rem;
     background-color: #CAEFD1;
     align-items: center;
-    margin-left: 19%;
+    /* margin-left: 19%; */
 }
 .photo2Mental{
     background-image: url("../SwaasIcons/photo2.jpeg");
     background-size: cover;
     height: 300px;
     width: 400px;
+    margin-left: 5rem;
     border-radius: 1rem;
+    margin: 1rem;
 }
 .info3{
-    width: 300px;
+    width: 50vw;
     height: 300px;
-    margin-right: 20px;
+    margin-right: 2.5rem;
 }
 .para{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color:#307743;
     font-weight:400;
     margin-top: 2rem;
 }
 #button2{
-    height: 2.5rem;
-    width: 10rem;
+    height: 3.5rem;
+    width: 11rem;
     text-align: center;
     border-radius: 1rem;
     background:linear-gradient(to left,#99E5A2,#41D8DD);
@@ -121,6 +125,9 @@ text-align: center;
     margin-left: 4.2rem;
     border: none;
     margin-top: 1rem;
+    margin:0;
+    margin-left: 16rem;
+  margin-top: 2rem;
 }
 .nav{
    margin-left: 2rem;
@@ -234,6 +241,7 @@ text-align: center;
         height: 10rem;
         width: 12rem;
         margin: 0 auto;
+        margin-top: 1rem;
   /* left: 5.5rem;
 
   top: 51rem; */
@@ -252,6 +260,7 @@ text-align: center;
     }
     #button2{
         margin: 0;
+        margin-bottom: 1rem;
     }
     .nav{
         display: grid;

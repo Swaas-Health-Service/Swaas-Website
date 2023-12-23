@@ -41,7 +41,7 @@ const OPD = () => {
 <header className='header'>
         {/* <div className="logo"></div> */}
         <Link to="/"><Logo/></Link>
-        <div style={{ width: 400,marginTop:"1rem" }}>
+        <div className="SearchBox"style={{ width: 400,marginTop:"1rem" }}>
         
           <ReactSearchAutocomplete
             items={indiancities}
@@ -67,33 +67,33 @@ const OPD = () => {
                     <div id="opdimages">
                         <div class="opdimg">
                             <h3>Dentist</h3>
-                            <div className="tooth"></div>
+                            <div className="Adi"><div className="tooth"></div></div>
                             <input className="custom-radio"type="radio" name="programmingLanguage" value="Ruby"></input>
                         </div>
                         <div class="opdimg">
                             <h3>Cardiologist</h3>
-                            <div className="stethoscope"></div>
+                           <div className="Adi"> <div className="stethoscope"></div></div>
                             <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
                         </div>
                         <div class="opdimg">
                             <h3>Physician</h3>
-                        <div className="hand"></div>
-
+                       <div className="Adi"> <div className="hand"></div>
+                       </div>
                         <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
                         </div>
                         <div class="opdimg">
                             <h3>Gynecologist</h3>
-                            <div className="bed"></div>
+                           <div className="Adi"> <div className="bed"></div></div>
                             <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
                         </div>
                         <div class="opdimg">
                             <h3>Homeopath</h3>
-                        <div className="homeo"></div>
+                       <div className="Adi"> <div className="homeo"></div></div>
                         <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
                         </div>
                         <div class="opdimg">
                             <h3>Ayurveda</h3>
-                            <div className="yoga"></div>
+                           <div className="Adi"> <div className="yoga"></div></div>
                             <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
                         </div>
                     </div>

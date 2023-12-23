@@ -472,24 +472,27 @@ margin: 0 auto;              }}
         width:10rem;
       }
       .image-info2{
-        position: absolute;
+        position: relative;
         height:12rem;
         width:15rem;
-        top:7rem;
+        margin: 0 auto;
       }
       .infoHome2{
-        height:34vh
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       .image-info4{
-        position:absolute;
+        position:relative;
         height:12rem;
         width:15rem;
-        top:7rem;
+        margin: 0 auto;
       }
       .image-info3{
-        position:absolute;
+        position:relative;
         height:10rem;
-        top:9rem;
+        margin: 0 auto;
         width:8.5rem;
       }
       *{
