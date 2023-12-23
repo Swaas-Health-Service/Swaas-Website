@@ -79,4 +79,4 @@ const validateLogin=(data)=>{
     });
     return schema.validate(data);
 }
-module.exports={Patient,validate};
+module.exports={Patient,validateRegistration,validateLogin};
