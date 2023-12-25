@@ -10,8 +10,8 @@ const {Patient,validateRegistration,validateLogin}=require('../Models/PatientSch
 const Token=require('../Models/TokenSchema');
 const validateToken=require('../Utils/validateToken');
 const sendEmail = require("../Utils/sendEmail");
-const {OPDBooking}= require("../Models/OPDBookingSchema");
-const OPDBooking = require('../models/OPDBooking'); // Import the OPDBooking model
+const OPDBooking = require('../Models/OPDBookingSchema');
+
 const Storage=multer.diskStorage({
     destination:function(req,file,cb){
         cb(null,path.resolve(`./Files/Patient/ProfileImage`))
@@ -222,29 +222,33 @@ router.post("password-reset/:id/:token", async (req, res) => {
 });
 
 // opd booking api
-router.post('/OPDBooking',async(req,res)=>{
-    try{
-        const details= req.body;
-        // saving it to OPDBooking model
-        const opd=await new OPDBooking({
-            appointment_id:details.appointment_id,
-            patient_id:details.patient_id,
-            doctor_id:details.doctor_id,
-            appointment_date:details.appointment_date,
-            appointment_time:details.appointment_time,
-            reason_for_visit:details.reason_for_visit,
-            status:"BOOKED"
-        }).save();
-        // sending email
-        const email=await Patient.findOne({patient_id:details.patient_id});
-        const url=`${process.env.BASE_URL_FRONTEND}/patient-dashboard/${opd._id}`;
-        await sendEmail(email.email,"OPD BOOKING",url);
-        // sending response
-        res.status(200).send({message:"OPD Booked Successfully",data:opd});
-    }catch(error){
-        res.status(500).send({message:"Internal Server Error"});
-        console.log(error);
-    }
-});
-
-module.exports=router;
+router.post('/OPDBooking', async (req, res) => {
+    try {
+        
+      const details = req.body;
+      console.log(details);
+        
+        const opd = new OPDBooking({
+            appointmentId: details.appointmentId,
+            patientId: details.patientId,
+            doctorId: details.doctorId,
+            appointmentDate: details.appointmentDate,
+            appointmentTime: details.appointmentTime,
+            reasonForVisit: details.reasonForVisit,
+            status: "BOOKED"
+          });
+  
+      await opd.save();
+  
+      const email = details.patientId;
+    const url = `${process.env.BASE_URL_FRONTEND}/patient-dashboard/${opd._id}`;
+    await sendEmail(email, `OPD BOOkED on ${details.appointmentDate} at ${details.appointmentTime}`, url);
+  
+    res.status(200).send({ message: "OPD Booked Successfully" });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ message: "Internal Error" });
+  }
+  });
+  
+  module.exports=router;
