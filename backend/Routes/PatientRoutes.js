@@ -15,7 +15,11 @@ const Token = require("../Models/TokenSchema");
 const validateToken = require("../Utils/validateToken");
 const sendEmail = require("../Utils/sendEmail");
 const OPDBooking = require("../Models/OPDBookingSchema");
-const twilio = require("twilio");
+const { Vonage } = require('@vonage/server-sdk')
+const vonage = new Vonage({
+  apiKey: process.env.VONAGEAPIKEY,
+  apiSecret: process.env.VONAGEAPISECRET
+});
 const Storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, path.resolve(`./Files/Patient/ProfileImage`));
@@ -128,12 +132,10 @@ router.post("/patient-login", async (req, res) => {
       res.status(422).send({ message: "Invalid Password" });
     }
     const token = await useremail.generateAuthToken();
-    res
-      .status(200)
-      .send({
-        data: { useremail, token },
-        message: "Patient Logged In Successfully",
-      });
+    res.status(200).send({
+      data: { useremail, token },
+      message: "Patient Logged In Successfully",
+    });
   } catch (error) {
     res.status(500).send({ message: "Internal Server Error" });
   }
@@ -270,11 +272,11 @@ router.post("password-reset/:id/:token", async (req, res) => {
     res.status(500).send({ message: "Internal Server Error" });
   }
 });
-
+// opdbooking route
 router.post("/OPDBooking", async (req, res) => {
   try {
     const details = req.body;
-    const appointmentId = crypto.randomBytes(16).toString('hex');
+    const appointmentId = crypto.randomBytes(16).toString("hex");
     const opd = new OPDBooking({
       appointmentId: appointmentId,
       patientId: details.patientId,
@@ -295,6 +297,17 @@ router.post("/OPDBooking", async (req, res) => {
       text
     );
 
+    const from = "Vonage APIs"
+    const phoneNumber = "+91"+details.phoneNumber;
+    const to = phoneNumber;
+    const text1 = `your appointment has been booked for the date of ${details.appointmentDate} at ${details.appointmentTime}`;
+    
+    async function sendSMS() {
+        await vonage.sms.send({to, from, text: text1})
+            .then(resp => { console.log('Message sent successfully'); console.log(resp); })
+            .catch(err => { console.log('There was an error sending the messages.'); console.error(err); });
+    }
+    await sendSMS();
     res.status(200).send({ message: "OPD Booked Successfully" });
   } catch (error) {
     console.log(error);
