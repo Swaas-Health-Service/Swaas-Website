@@ -21,7 +21,7 @@ const App = () => {
   return (
     <>
     <div>
-      <Main>
+      {/* <Main>
         <Routes>
           <Route exact path='/MedicineNew'element={<MedicineNew/>}/> 
           <Route exact path='/About'element={<About/>}/> 
@@ -39,7 +39,8 @@ const App = () => {
           <Route exact path='/Doctors' element={<Doctors/>}/> 
 
         </Routes>
-      </Main>
+      </Main> */}
+      
     </div>
       
     </>
