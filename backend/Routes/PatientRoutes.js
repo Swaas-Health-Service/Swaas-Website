@@ -10,6 +10,7 @@ const {Patient,validateRegistration,validateLogin}=require('../Models/PatientSch
 const Token=require('../Models/TokenSchema');
 const validateToken=require('../Utils/validateToken');
 const sendEmail = require("../Utils/sendEmail");
+const OPDBooking = require('../Models/OPDBookingSchema');
 
 const Storage=multer.diskStorage({
     destination:function(req,file,cb){
@@ -220,5 +221,34 @@ router.post("password-reset/:id/:token", async (req, res) => {
 	}
 });
 
-
-module.exports=router;
+// opd booking api
+router.post('/OPDBooking', async (req, res) => {
+    try {
+        
+      const details = req.body;
+      console.log(details);
+        
+        const opd = new OPDBooking({
+            appointmentId: details.appointmentId,
+            patientId: details.patientId,
+            doctorId: details.doctorId,
+            appointmentDate: details.appointmentDate,
+            appointmentTime: details.appointmentTime,
+            reasonForVisit: details.reasonForVisit,
+            status: "BOOKED"
+          });
+  
+      await opd.save();
+  
+      const email = details.patientId;
+    const url = `${process.env.BASE_URL_FRONTEND}/patient-dashboard/${opd._id}`;
+    await sendEmail(email, `OPD BOOkED on ${details.appointmentDate} at ${details.appointmentTime}`, url);
+  
+    res.status(200).send({ message: "OPD Booked Successfully" });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ message: "Internal Error" });
+  }
+  });
+  
+  module.exports=router;

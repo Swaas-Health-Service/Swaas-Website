@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 const OPDBookingSchema = new mongoose.Schema({
-	appointmentId: { type: String, required: true },
+    appointmentId: { type: String, required: true },
     patientId:{ type: String, required: true },
     doctorId:{ type: String, required: true },
     appointmentDate:{type:Date,required:true},
@@ -10,6 +10,5 @@ const OPDBookingSchema = new mongoose.Schema({
     status:{type:String,enum:["BOOKED","CHECKUP-PENDING","CHECKUP-DONE"],default:"BOOKED"}
 });
 
-const OPDBooking=new mongoose.model("OPDBooking",OPDBookingSchema);
-
+OPDBooking =mongoose.model("OPDBooking",OPDBookingSchema);
 module.exports=OPDBooking;
