@@ -46,6 +46,7 @@ const App = () => {
           <Route exact path='/PatientSignin' element={<PatientLogin/>}/>
           <Route exact path='/DoctorRegister' element={<DoctorRegister/>}/>
           <Route exact path='/PatienReports' element={<PatientReports/>}/>
+          <Route exact path='/Doctors' element={<Doctors/>}/>
         </Routes>
       </Main>
     </div>

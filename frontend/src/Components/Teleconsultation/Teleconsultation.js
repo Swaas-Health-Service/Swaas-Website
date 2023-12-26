@@ -9,9 +9,7 @@ const Teleconsultation = () => {
   return (
     <div>
        <header className='header'>
-        {/* <div className="logo"></div> */}
         <Link to="/"><Logo/></Link>
-                {/* <div className="profile-photo"></div> */}
                 <Link to="/Profile"><PLogo/></Link>
     </header>
     <div className='mainTele'>
@@ -26,7 +24,7 @@ const Teleconsultation = () => {
             </div>
         </div>
         <div className="photo1Tele"></div>
-    </div >
+    </div>
     <div className="specialities">
         <div className="heading-specialities">
             <h2>Specialities</h2>

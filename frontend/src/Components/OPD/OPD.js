@@ -58,10 +58,7 @@ const OPD = () => {
       
         {/* <div className="profile-photo"></div> */}
         <Link to="/Profile"><PLogo/></Link>
-      </header>
-                
-                        
-                   
+      </header> 
                 <div id="opdbody">
                     <h1 style={{marginBottom:"2rem"}}>Choose the Speciality of Doctor</h1>
                     <div id="opdimages">
