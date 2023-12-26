@@ -2,7 +2,6 @@ import SignUp from "./Components/SignUp/Signup"
 import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance"
 import Emergency from "./Components/Emergency/Emergency"
 import HomePage from "./Components/HomePage/HomePage"
-import LoginPage from "./Components/LoginPage/Login"
 import MentalHealth from "./Components/MentalHealth/MentalHealth"
 import OPD from "./Components/OPD/OPD"
 import Pathology from "./Components/Pathology/Pathology"
@@ -16,19 +15,23 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import PatientDetails from "./Components/PatientList/PatientList"
+import PatientList from "./Components/PatientList/PatientList"
+import PatientRegister from "./Components/Registration/Patient/Register"
+import DoctorRegister from "./Components/Registration/Doctor/Register"
+import PatientReports from "./Components/Profile/PatientReports/PatientReports"
 
 const App = () => {
   return (
     <>
     <div>
-      <Main>
+      {/* <Main>
         <Routes>
           <Route exact path='/MedicineNew'element={<MedicineNew/>}/> 
           <Route exact path='/About'element={<About/>}/> 
           <Route exact path='/BillsandInsuarance'element={<BillsandInsuarance/>}/>       
           <Route exact path='/Emergency' element={<Emergency/>}/>       
-          <Route exact path='/' element={<HomePage/>}/>       
-          <Route exact path='/LoginPage' element={<LoginPage/>}/>       
+          <Route exact path='/' element={<HomePage/>}/>            
           <Route exact path='/Medicine' element={<MedicineNew/>}/>       
           <Route exact path='/MentalHealth' element={<MentalHealth/>}/>       
           <Route exact path='/OPD' element={<OPD/>}/>       
@@ -37,9 +40,13 @@ const App = () => {
           <Route exact path='/SignUp' element={<SignUp/>}/>       
           <Route exact path='/Teleconsultation' element={<Teleconsultation/>}/> 
           <Route exact path='/Doctors' element={<Doctors/>}/> 
-
+          <Route exact path='/PatientReport' element={<PatientReports/>}/> 
         </Routes>
-      </Main>
+      </Main> */}
+      {/* <PatientList/> */}
+      {/* <PatientRegister/> */}
+      {/* <DoctorRegister/> */}
+      <PatientReports/>
     </div>
       
     </>
