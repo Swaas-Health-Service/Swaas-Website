@@ -274,9 +274,9 @@ router.post("password-reset/:id/:token", async (req, res) => {
 router.post("/OPDBooking", async (req, res) => {
   try {
     const details = req.body;
-    
+    const appointmentId = crypto.randomBytes(16).toString('hex');
     const opd = new OPDBooking({
-      appointmentId: details.appointmentId,
+      appointmentId: appointmentId,
       patientId: details.patientId,
       doctorId: details.doctorId,
       appointmentDate: details.appointmentDate,
@@ -288,23 +288,12 @@ router.post("/OPDBooking", async (req, res) => {
     await opd.save();
 
     const email = details.patientId;
-    const url = `${process.env.BASE_URL_FRONTEND}/patient-dashboard/${opd._id}`;
+    const text = `your appointment has been booked for the date of ${details.appointmentDate} at ${details.appointmentTime}`;
     await sendEmail(
       email,
       `OPD BOOkED on ${details.appointmentDate} at ${details.appointmentTime}`,
-      url
+      text
     );
-    const accountSid = process.env.TWILIO_ACCOUNT_SID;
-    const authToken = process.env.TWILIO_AUTH_TOKEN;
-    const client = twilio(accountSid, authToken);
-    // Send SMS
-    const message = await client.messages.create({
-      body: `OPD BOOkED on ${details.appointmentDate} at ${details.appointmentTime}`,
-      from: process.env.TWILIO_PHONE_NUMBER, // your Twilio number
-      to: details.phone, // patient's phone number
-    });
-
-    console.log(message.sid);
 
     res.status(200).send({ message: "OPD Booked Successfully" });
   } catch (error) {
