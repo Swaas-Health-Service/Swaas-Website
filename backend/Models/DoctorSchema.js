@@ -1,10 +1,13 @@
 const mongoose=require("mongoose");
 require("dotenv").config();
 const JOI = require("joi");
+const jwt = require('jsonwebtoken');
 const DoctorSchema = new mongoose.Schema({
     doctorId:{type:String,requird:true},
 	name:{type:String,requird:true},
     email:{type:String,requird:true},
+    password:{type:String,requird:true},
+    confirmpassword:{type: String, required: true},
     mobileNumber:{type:String,requird:true},
     specialization:{type:String,required:true},
     practicingSince:{type:String,required:true},
@@ -20,6 +23,8 @@ const validatedoctor= (data) => {
         doctorId: JOI.string().required().label("Doctor Id"),
         name: JOI.string().required().label("Name"),
         email: JOI.string().email().required().label("Email"),
+        password:passwordComplexity().required().label("Password"),
+        confirmpassword:passwordComplexity().required().label("Confirm Password"),
         mobileNumber: JOI.string().required().label("Mobile Number"),
         specialization: JOI.string().required().label("Specialization"),
         practicingSince: JOI.string().required().label("Practicing Since"),
@@ -29,11 +34,10 @@ const validatedoctor= (data) => {
         state: JOI.string().required().label("State"),
         pincode: JOI.string().required().label("Pincode"),
         hospital: JOI.string().required().label("Hospital"),
-        password: JOI.string().required().label("Password"),
     });
     return schema.validate(data);
 };
-const jwt = require('jsonwebtoken');
+
 
 
 DoctorSchema.methods.generateToken = function() {

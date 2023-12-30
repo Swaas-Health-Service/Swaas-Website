@@ -26,7 +26,7 @@ const Registration = () => {
                                       </div>
                                     <div className="registration-card-back">
                                         <div className="registration-center-wrap">
-                                                <div  className='blackbox'><h4 className="mb-4 pb-3">Register</h4></div>
+                                                <div  className='blackbox'><h4 className="mb-4 pb-3">Registration</h4></div>
                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Patient"/>
                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Hospital"/>
                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Doctor"/>

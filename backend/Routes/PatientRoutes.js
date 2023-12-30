@@ -290,10 +290,10 @@ router.post("/OPDBooking", async (req, res) => {
     await opd.save();
 
     const email = details.patientId;
-    const text = `your appointment has been booked for the date of ${details.appointmentDate} at ${details.appointmentTime}`;
+    const text = `Your Appointment for OPD has been booked for the date of ${details.appointmentDate} at ${details.appointmentTime}`;
     await sendEmail(
       email,
-      `OPD BOOkED on ${details.appointmentDate} at ${details.appointmentTime}`,
+      `Your Appointment for OPD Booked on ${details.appointmentDate} at ${details.appointmentTime}`,
       text
     );
 

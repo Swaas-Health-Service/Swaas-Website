@@ -19,6 +19,8 @@ router.post("/doctor-register", async (req, res) => {
     doctorId,
     name,
     email,
+    password,
+    confirmpassword,
     mobileNumber,
     specialization,
     practicingSince,
@@ -28,12 +30,15 @@ router.post("/doctor-register", async (req, res) => {
     state,
     pincode,
     hospital,
-    password,
   } = req.body;
-  // checking for dublicates
+  // checking for duplicates
   const doctor = await Doctor.findOne({ email: email });
   if (doctor) {
     return res.status(400).send({ message: "Doctor already exists" });
+  }else if(password !== confirmpassword) {
+    res
+      .status(422)
+      .send({ message: "Password and Confirm Password did not match" });
   }
   try {
     const { error } = validatedoctor(req.body);
@@ -45,6 +50,8 @@ router.post("/doctor-register", async (req, res) => {
       doctorId: doctorId,
       name: name,
       email: email,
+      password:password,
+      confirmpassword:confirmpassword,
       mobileNumber: mobileNumber,
       specialization: specialization,
       practicingSince: practicingSince,
@@ -55,8 +62,9 @@ router.post("/doctor-register", async (req, res) => {
       pincode: pincode,
       hospital: hospital,
     });
-    const salt = await bcrypt.genSalt(10);
+    const salt = await bcrypt.genSalt(Number(process.env.SALT));
     doctor.password = await bcrypt.hash(req.body.password, salt);
+    doctor.confirmpassword = await bcrypt.hash(req.body.confirmpassword, salt);
     const token = await doctor.generateToken();
     await doctor.save();
     const doctorToken = new Token({
@@ -67,7 +75,7 @@ router.post("/doctor-register", async (req, res) => {
     await doctorToken.save();
     // sending mail
 
-    const url = `youhave become a doctor registered at Swaas. click here to verify your email: ${process.env.BASE_URL}/doctor/verify-email/${doctor._id} and your otp is ${otp}`;
+    const url = `You have become a doctor registered at Swaas. Click here to verify your email: ${process.env.BASE_URL}/doctor/verify-email/${doctor._id} and your otp is ${otp}`;
 
     await sendEmail(doctor.email, "Verify Email regardding registration", url);
 
@@ -248,7 +256,7 @@ router.post("/doctor-password-reset/:id/:token",async(req,res)=>{
         });
         if (!token) return res.status(400).send({ message: "Invalid link" });
         const {password} = req.body;
-        const salt = await bcrypt.genSalt(10);
+        const salt = await bcrypt.genSalt(Number(process.env.SALT));
         const hashedPassword = await bcrypt.hash(password,salt);
         user.password = hashedPassword;
         user.save();

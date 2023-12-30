@@ -74,7 +74,8 @@ const Doctors = () => {
             <p className="btn-info">500 Consultation Fee</p>
         </div>
     </div>
-<Footer/>    </div>
+    <Footer/>
+    </div>
   )
 }
 
