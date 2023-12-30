@@ -110,6 +110,26 @@ router.get("/doctor/verify-email/:id/", async (req, res) => {
   }
 });
 
+// resend otp
+router.get("/doctor/resend-otp",async(req,res)=>{
+  try{
+    const user = await Doctor.findOne({ _id: req.body.id });
+    if (!user) return res.status(400).send({ message: "Invalid link" });
+
+    const token = await Token.findOne({
+      userId: user._id,
+      token: req.params.token,
+    });
+    if (!token) return res.status(400).send({ message: "Invalid link" });
+    otp=Math.floor(100000 + Math.random() * 900000);
+    const url = `youhave become a doctor registered at Swaas. click here to verify your email: ${process.env.BASE_URL}/doctor/verify-email/${user._id} and your otp is ${otp}`;
+    await sendEmail(user.email, "Verify Email regardding registration", url);
+    res.status(200).send({ message: "OTP sent to your email" });
+  }catch(err){
+    res.status(500).send({message:"Internal Server Error"});
+    console.log(err);
+  }
+});
 //otpverification
 router.post("/doctor/verify-email/:id", async (req, res) => {
   try {
