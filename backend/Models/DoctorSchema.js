@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 require("dotenv").config();
-
+const JOI = require("joi");
 const DoctorSchema = new mongoose.Schema({
     doctorId:{type:String,requird:true},
 	name:{type:String,requird:true},
@@ -15,7 +15,31 @@ const DoctorSchema = new mongoose.Schema({
     pincode:{type:String,required:true},
     hospital:{type:String,required:true},
 });
+const validatedoctor= (data) => {
+    const schema = JOI.object({
+        doctorId: JOI.string().required().label("Doctor Id"),
+        name: JOI.string().required().label("Name"),
+        email: JOI.string().email().required().label("Email"),
+        mobileNumber: JOI.string().required().label("Mobile Number"),
+        specialization: JOI.string().required().label("Specialization"),
+        practicingSince: JOI.string().required().label("Practicing Since"),
+        management: JOI.string().required().label("Management"),
+        city: JOI.string().required().label("City"),
+        district: JOI.string().required().label("District"),
+        state: JOI.string().required().label("State"),
+        pincode: JOI.string().required().label("Pincode"),
+        hospital: JOI.string().required().label("Hospital"),
+        password: JOI.string().required().label("Password"),
+    });
+    return schema.validate(data);
+};
+const jwt = require('jsonwebtoken');
 
-const Doctor=new mongoose.model("Doctor",DoctorSchema);
 
-module.exports=Doctor;
+DoctorSchema.methods.generateToken = function() {
+    const token = jwt.sign({ _id: this._id },process.env.JWTPRIVATEKEY, { expiresIn: '1h' });
+    return token;
+};
+
+const Doctor = mongoose.model('Doctor', DoctorSchema,);
+module.exports={Doctor,validatedoctor};

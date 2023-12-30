@@ -81,7 +81,7 @@ router.post(
       }
     } catch (err) {
       res.status(500).send({ message: "Internal Server Error" });
-      console.log(error);
+      console.log(err);
     }
   }
 );
@@ -196,7 +196,7 @@ router.post("/forgot-password", async (req, res) => {
     }
     const useremail = await Patient.findOne({ email: email });
     const usermobilenumber = await Patient.findOne({
-      mobileNumber: mobileNumber,
+      mobileNumber: req.body.mobilenumber,
     });
     if (!useremail && !usermobilenumber) {
       res.status(404).send({ message: "User not found" });
