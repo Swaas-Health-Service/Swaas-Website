@@ -1,12 +1,24 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import "./HomePage.css";
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Footer from "../Footer/Footer"
 import Review from '../Review/Review';
 import PLogo from "../ProfileLogo/PLogo"
 import Logo from "../Logo/Logo"
-const HomePage = () => {
-   
+const HomePage = (props) => {
+   const {loggedIn}=props
+   const navigate=useNavigate();
+
+   const onButtonClick = () => {
+    if (loggedIn) {
+        // localStorage.removeItem("user")
+        props.setLoggedIn(false)
+    } else {
+        navigate("/Registration")
+    }
+   }
+
   return (
     <>
       <header className='headerHome' >
@@ -22,7 +34,12 @@ const HomePage = () => {
             <Link to='/BillsandInsuarance'><div className='navbar-elements'>Insurance</div></Link>
 
         </div>
-        <Link to="/Profile"><PLogo/></Link>
+        {/*  */}
+        <div className="LoginButtonHome">
+            <input type="button" onClick={onButtonClick} className="inputButtonLogin" value={loggedIn ? "Log out":"Log in"} />
+            {(loggedIn ?<PLogo/>:<div/>
+            )}
+        </div>
     </header>
     <div className="infoHome">
         <div className="text-infoHome">
