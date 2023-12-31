@@ -5,7 +5,6 @@ import Logo from '../Logo/Logo';
 import "./Profile.css";
 import PLogo from '../ProfileLogo/PLogo';
 import Upload from '../UploadImage/Upload';
-
 const Profile = () => {
   const [isEditing, setEditing] = useState(false);
   const [formData, setFormData] = useState({
