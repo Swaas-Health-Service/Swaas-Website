@@ -1,8 +1,4 @@
-import {
-  BrowserRouter as Main,
-  Routes,
-  Route
-} from "react-router-dom";
+import {BrowserRouter as Main,Routes,Route} from "react-router-dom";
 import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance"
 import Emergency from "./Components/Emergency/Emergency"
 import HomePage from "./Components/HomePage/HomePage"
@@ -27,9 +23,9 @@ const App = () => {
     <div>
       <Main>
         <Routes>
-          <Route exact path='/MedicineNew'element={<MedicineNew/>}/> 
-          <Route exact path='/About'element={<About/>}/> 
-          <Route exact path='/BillsandInsuarance'element={<BillsandInsuarance/>}/>       
+          <Route exact path='/MedicineNew' element={<MedicineNew/>}/> 
+          <Route exact path='/About' element={<About/>}/> 
+          <Route exact path='/BillsandInsuarance' element={<BillsandInsuarance/>}/>       
           <Route exact path='/Emergency' element={<Emergency/>}/>       
           <Route exact path='/' element={<HomePage/>}/>            
           <Route exact path='/Medicine' element={<MedicineNew/>}/>       
