@@ -20,8 +20,11 @@ import DoctorRegister from "./Components/Registration/Doctor/Register"
 import PatientReports from "./Components/Profile/PatientReports/PatientReports"
 import Registration from "./Components/Registration/Registration"
 import PatientLogin from "./Components/Registration/Patient/Login"
-
+import { useState } from "react";
+import PatientProfile from "./Components/Profile/PatientProfile";
 const App = () => {
+  const [loggedIn,setLoggedIn]= useState(false)
+  const [email,setEmail]=useState("")
   return (
     <>
     <div>
@@ -31,19 +34,20 @@ const App = () => {
           <Route exact path='/About'element={<About/>}/> 
           <Route exact path='/BillsandInsuarance'element={<BillsandInsuarance/>}/>       
           <Route exact path='/Emergency' element={<Emergency/>}/>       
-          <Route exact path='/' element={<HomePage/>}/>            
+          <Route exact path='/' element={<HomePage email={email} loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>}/>            
           <Route exact path='/Medicine' element={<MedicineNew/>}/>       
           <Route exact path='/MentalHealth' element={<MentalHealth/>}/>       
           <Route exact path='/OPD' element={<OPD/>}/>       
           <Route exact path='/Pathology' element={<Pathology/>}/>       
-          <Route exact path='/Profile' element={<Profile/>}/>       
+          <Route exact path='/Profile' element={<Profile/>}/>    
+          <Route exact path="/PatientProfile" element={<PatientProfile/>}/>   
           <Route exact path='/Registration' element={<Registration/>}/>       
           <Route exact path='/Teleconsultation' element={<Teleconsultation/>}/> 
           <Route exact path='/Doctors' element={<Doctors/>}/> 
           <Route exact path='/PatientReport' element={<PatientReports/>}/>
           <Route exact path='/PatientList' element={<PatientList/>}/>
           <Route exact path='/PatientRegister' element={<PatientRegister/>}/>
-          <Route exact path='/PatientSignin' element={<PatientLogin/>}/>
+          <Route exact path='/PatientSignin' element={<PatientLogin setLoggedIn={setLoggedIn} setEmail={setEmail}/>}/>
           <Route exact path='/DoctorRegister' element={<DoctorRegister/>}/>
           <Route exact path='/PatienReports' element={<PatientReports/>}/>
           <Route exact path='/Doctors' element={<Doctors/>}/>

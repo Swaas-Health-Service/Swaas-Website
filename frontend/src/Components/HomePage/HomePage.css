@@ -5,6 +5,23 @@
     font-family:'Encode Sans Expanded',sans-serif;
 
 }
+.LoginButtonHome{
+    width: fit-content;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.inputButtonLogin{
+    border-radius: 1rem;
+  background: linear-gradient(to left,#99E5A2,#41D8DD);
+  color: #0D6869;
+  border: none;
+  height: 2rem;
+  width: 5rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
 .headerHome{
     height: 80px;
     width: 100vw;
