@@ -23,25 +23,27 @@ const Registration = () => {
                                             <div className="registration-section text-center">
 
                                                 <div className='blackbox'><h4 className="mb-4 pb-3" style={{color:"#0D6869"}}>Log In</h4></div>
-                                               <Link to="/PatientSignin"> <input type="submit" className="registration-btn mt-4 btn" value="Login as Patient"/>
-                                               </Link>                                       <Link to="/">       <input type="submit" className="registration-btn mt-4 btn" value="Login as Hospital"/>
-                                               </Link>
-                                               <Link to="/"><input type="submit" className="registration-btn mt-4 btn" value="Login as Doctor"/>
-                                               </Link></div>
+                                                <button type="submit" className="registration-btn mt-4 btn" value=""><Link to="/PatientSignin">Login as Patient</Link></button>
+                                                <button type="submit" className="registration-btn mt-4 btn" value=""><Link to="/">Login as Hospital</Link></button>
+
+                                                <button type="submit" className="registration-btn mt-4 btn" value=""><Link to="/">Login as Doctor</Link></button>
+</div>
                                           </div>
                                       </div>
                                     <div className="registration-card-back">
                                         <div className="registration-center-wrap">
                                                 <div  className='blackbox'><h4 className="mb-4 pb-3"style={{color:"#0D6869"}}>Register</h4></div>
-                                               <Link to="/PatientRegister"> <input type="submit" className="registration-btn mt-4 btn" value="Register as Patient"/>
-                                               </Link> <input type="submit" className="registration-btn mt-4 btn" value="Register as Hospital"/>
-                                               <Link to="/DoctorRegister"> <input type="submit" className="registration-btn mt-4 btn" value="Register as Doctor"/>
-                                               </Link> </div>
+                                                <button type="submit" className="registration-btn mt-4 btn" value=""><Link to="/PatientRegister">Register as Patient </Link></button>
+                                               {/* <input type="submit" className="registration-btn mt-4 btn" value="Register as Hospital"/> */}
+                                               <button type="submit" className="registration-btn mt-4 btn" value=""><Link to="/PatientRegister">Register as Hospital </Link></button>
+                                               <button type="submit" className="registration-btn mt-4 btn" value=""><Link to="/DoctorRegister">Register as Doctor </Link></button>
 
-//                                                 <div  className='blackbox'><h4 className="mb-4 pb-3">Registration</h4></div>
-//                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Patient"/>
-//                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Hospital"/>
-//                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Doctor"/>
+                                                </div>
+
+                                                 {/* <div  className='blackbox'><h4 className="mb-4 pb-3">Registration</h4></div>
+                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Patient"/>
+                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Hospital"/>
+                                                 <input type="submit" className="registration-btn mt-4 btn" value="Register as Doctor"/> */}
                                           </div>
 
                                       </div>
@@ -52,7 +54,7 @@ const Registration = () => {
                   </div>
             </div>
         </div>
-        </div>
+        
     )
   }
   

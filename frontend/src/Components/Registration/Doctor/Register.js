@@ -9,9 +9,12 @@ const DoctorRegister=()=> {
         <div className="logo"></div>
         <div className="profile-photo"></div>
       </header>
+      <div className="doctorRegister">
       <div className="sign-photo"></div>
-        <h2 className="heading">Doctor Registration</h2>
+      <div className="doctorRegisterform">
       <div className="d-sign-in">
+      <div className="headingDoctor">Doctor Registration</div>
+
         <form method="post" action="/">
           <div className="doc-sign">
             <div className="doctor">
@@ -141,6 +144,8 @@ const DoctorRegister=()=> {
           </div>
           <button className="doc-btn">Submit</button>
         </form>
+      </div>
+      </div>
       </div>
     </>
   );

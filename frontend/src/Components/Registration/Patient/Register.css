@@ -10,6 +10,8 @@
 }
 .Register{
     display: flex;
+    background-image: url("../../SwaasIcons/Minimalist\ Gradient\ Medical\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg");
+    background-size: cover;
 }
 .RegistrationPhoto{
     background-image: url("../../SwaasIcons/aboutuspic.png");
