@@ -46,11 +46,12 @@ function PatientRegister() {
         <div className="logo"></div>
         <div className="profile-photo"></div>
       </header>
-      <h2 className="heading">Patient Register</h2>
+     
       <div className="Register">
         <div className="RegistrationPhoto"></div>
 
         <div className="registrationForm">
+        <h2 className="heading">Patient Register</h2>
           <form method="post" action="" onSubmit={handleSubmit} >
             <div className="doc-sign">
               <div className="doctor">

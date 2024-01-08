@@ -41,7 +41,7 @@ const OPD = () => {
 <header className='header'>
         {/* <div className="logo"></div> */}
         <Link to="/"><Logo/></Link>
-        <div className="SearchBox"style={{ width: 400,marginTop:"1rem" }}>
+        {/* <div className="SearchBox"style={{ width: 400,marginTop:"1rem" }}>
         
           <ReactSearchAutocomplete
             items={indiancities}
@@ -53,45 +53,47 @@ const OPD = () => {
             styling={{ zIndex: 0 }} // To display it on top of the search box below
             autoFocus
           />
-          </div>
-        {/* <input type="text" id="textboxopd" placeholder="City,State" /> */}
+          </div> */}
+        <input type="text" id="textboxopd" placeholder="City,State" />  
       
         {/* <div className="profile-photo"></div> */}
         <Link to="/Profile"><PLogo/></Link>
       </header> 
                 <div id="opdbody">
-                    <h1 style={{marginBottom:"2rem"}}>Choose the Speciality of Doctor</h1>
+                    <h2 style={{marginBottom:"0rem"}}>Choose the Speciality of Doctor</h2>
+                   <div className="textboxopdSpeciality"style={{marginBottom:"1rem"}}> <input type="text" id="textBoxSpeciality" placeholder="Speciality.." />  
+                   </div>
                     <div id="opdimages">
                         <div class="opdimg">
                             <h3>Dentist</h3>
                             <div className="Adi"><div className="tooth"></div></div>
-                            <input className="custom-radio"type="radio" name="programmingLanguage" value="Ruby"></input>
+                            {/* <input className="custom-radio"type="radio" name="programmingLanguage" value="Ruby"></input> */}
                         </div>
                         <div class="opdimg">
                             <h3>Cardiologist</h3>
                            <div className="Adi"> <div className="stethoscope"></div></div>
-                            <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
+                            {/* <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input> */}
                         </div>
                         <div class="opdimg">
                             <h3>Physician</h3>
                        <div className="Adi"> <div className="hand"></div>
                        </div>
-                        <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
+                        {/* <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input> */}
                         </div>
                         <div class="opdimg">
                             <h3>Gynecologist</h3>
                            <div className="Adi"> <div className="bed"></div></div>
-                            <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
+                            {/* <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input> */}
                         </div>
                         <div class="opdimg">
                             <h3>Homeopath</h3>
                        <div className="Adi"> <div className="homeo"></div></div>
-                        <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
+                        {/* <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input> */}
                         </div>
                         <div class="opdimg">
                             <h3>Ayurveda</h3>
                            <div className="Adi"> <div className="yoga"></div></div>
-                            <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
+                            {/* <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input> */}
                         </div>
                     </div>
                 </div>

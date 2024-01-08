@@ -27,10 +27,10 @@ const HomePage = (props) => {
         </div>
         <Logo/>
         <div className="nav-bar">
-            <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
-            <Link to='/Teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
-            <Link to='/MedicalReports'><div className='navbar-elements'>Medical Reports</div> </Link>
-            <Link to='/BillsandInsuarance'><div className='navbar-elements'>Insurance</div></Link>
+            <div className='navbar-elements'><Link to='/OPD' style={{color:"#0D6869"}}>OPD Booking</Link></div>
+            <div className='navbar-elements'><Link to='/Teleconsultation'style={{color:"#0D6869"}}>Teleconsulation</Link></div>
+           <div className='navbar-elements'> <Link to='/MedicalReports'style={{color:"#0D6869"}}>Medical Reports</Link></div> 
+           <div className='navbar-elements'> <Link to='/BillsandInsuarance'style={{color:"#0D6869"}}>Insurance</Link></div>
         </div>
         {/*  */}
         <div className="LoginButtonHome">
