@@ -1,14 +1,12 @@
 import React from "react";
 import "./Register.css";
 import { Link } from "react-router-dom";
+import Navbar from "../../Navbar/Navbar";
 
 const DoctorRegister=()=> {
   return (
     <>
-      <header className="header">
-        <div className="logo"></div>
-        <div className="profile-photo"></div>
-      </header>
+      <Navbar/>
       <div className="sign-photo"></div>
         <h2 className="heading">Doctor Registration</h2>
       <div className="d-sign-in">

@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 
 const Sidebar = ({ isOpen }) => {
@@ -8,8 +8,8 @@ const Sidebar = ({ isOpen }) => {
         setIsSidebarOpen(!isSidebarOpen);
     };
     return (
-        <div className={`sidebarProfile ${isOpen  ? 'open' : ''}`}>
-            
+        <div className={`sidebarProfile ${isOpen ? 'open' : ''}`}>
+
             <p>Sidebar Content</p>
             <div className="close-icon" onClick={toggleSidebar}>✕</div>
         </div>

@@ -1,38 +1,21 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
+.header-aboutus{
+    height: 90px;
     width: 100vw;
-    height: 80px;
-    background-color: #DFF8F8;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    margin: 0;
+    background-color: #0D6869;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .medicalbookpic{
-    /* background-image: url("./Images/medicalbookpic.png"); */
     background-image: url("../SwaasIcons/medicalbookpic.png");
-
     background-size: cover;
     width: 556px;
-height: 414px;
+    height: 414px;
     
 }
 
-body {
-    background: #CAF4F4;;
-}
-h1 {
-    color: #0D6869;
-    text-align: center;
-}
-h2 {
-    color: #307743;
-}
 #medicalbook {
     background: #CAEFCE;
     height: 400px;
@@ -53,9 +36,9 @@ button {
 }
 a:hover {
     background: linear-gradient(270deg, #12ec33 0%, #0688ce 100%);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 a {
     text-decoration: none;

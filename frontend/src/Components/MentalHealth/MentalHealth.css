@@ -1,42 +1,24 @@
-body{
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #CAF4F4;
-    font-family: 'Montserrat', 'sans-serif';
-}
-.header{
+.mentalhealth-main{
+    margin: 5vw;
+    width:90vw;
+    border:2rem;
+    background-color: white;
     display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    height: 80px;
-    background-color: #DFF8F8;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    margin: 0;
-}
-
-.Main{
-    margin-top: 3vw;
-    width: 100%;
-    height: fit-content;
-    background-color: #CAEFD1;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 .infoMental{
     height: inherit;
     width: 40vw;
     margin-left: 1.5rem;
-    margin-top: 0;
-    padding-top: 0;
 }
-.photo1{
-    background-image: url("../SwaasIcons/photo1.jpg");
-    background-size:cover;
-    height:57vh;
-    width: 29vw;
-   
+.mentalhealth-main-image{
+    height: 70vh;
+    width:40vw;
+    border-radius: 1rem;
+
 }
+
 .HI{
 font-size: 2.5rem;
 color:#6999B3;
@@ -61,12 +43,12 @@ text-align: center;
 .buttonMental{
     height: 3rem;
     width: 14rem;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     border-radius: 1rem;
     background:linear-gradient(to left,#99E5A2,#41D8DD);
     color:white;
     font-size: 1.2rem;
-    padding-top: 0.4rem;
     cursor: pointer;
     margin-left: 36%;
     border: none;
@@ -87,12 +69,10 @@ text-align: center;
     height: inherit;
     width: 100vw;
     border-radius: 1rem;
-    background-color: #CAEFD1;
+    background-color: white;
     align-items: center;
-    /* margin-left: 19%; */
 }
 .photo2Mental{
-    background-image: url("../SwaasIcons/photo2.jpeg");
     background-size: cover;
     height: 300px;
     width: 400px;
@@ -127,85 +107,24 @@ text-align: center;
     margin-top: 1rem;
     margin:0;
     margin-left: 16rem;
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
-.nav{
-   margin-left: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2rem;
-    height: 200px;
-    width: 95vw;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-.nav1{
-    height: 50px;
-    width: auto;
-    background-color: #CAEFD1;
-    border-radius: 1rem;
-    margin-top: 1.5rem;
-    justify-content: center;
-    align-items: center;
-}
-.nav1 a{
-    text-decoration: none;
-    text-align: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color:#307743;
-    font-weight:400;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-   
-}
-.nav1:hover{
-    box-shadow: 2px 4px 8px #6999B3;
-}
-#button1:hover{
-    box-shadow: 2px 4px 8px #6999B3;
-}
-#button2:hover{
-    box-shadow: 2px 4px 8px #6999B3;
-}
-.review{
-    display:flex;
-    justify-content: center;
-    height: 300px;
-    width: 75vw;
-    margin-top: 6rem;
-    background-color:#CAEFD1;
-}
-.review p{
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    position: relative;
-    top: 140px;
-    font-weight: bold;
-}
-.footer{
-    height: 400px;
-    width: 100vw;
-    background:linear-gradient(#99E5A2,#41D8DD);
-    margin-top: 10rem;
-}
+
+
 @media screen and (max-width:900px) {
-    .Main{
+    .mentalhealth-main{
         display: block;
         width: 100%;
-        /* height: 56vh; */
+
     }
     .infoMental{
         width: 100%;
         margin-left: 0;
-/* height:28vh; */
     }
     .info2{
         width: 100%;
-  margin: 0;
-  display: block;
+        margin: 0;
+        display: block;
     }
     .INF-H{
         font-size: 1.5rem;
@@ -221,20 +140,19 @@ text-align: center;
     }
     #button1{
         margin: 0;
-    margin-top: 0px;
-  margin-top: 1rem;
-  width: 11rem;
-  height: fit-content;
-    font-size: 1.2rem;
-    padding: revert;
+        margin-top: 0px;
+        margin-top: 1rem;
+        width: 11rem;
+        height: fit-content;
+        font-size: 1.2rem;
+        padding: revert;
     }
     .photo1{
         position: relative;
-    height: 11rem;
-    width: 12rem;
-    margin: 0 auto;
-    /* left: 6rem; */
-    top: 0;
+        height: 11rem;
+        width: 12rem;
+        margin: 0 auto;
+        top: 0;
     }
     .photo2Mental{
         position: relative;
@@ -242,10 +160,8 @@ text-align: center;
         width: 12rem;
         margin: 0 auto;
         margin-top: 1rem;
-  /* left: 5.5rem;
-
-  top: 51rem; */
     }
+
     .info2{
         width: 100%;
         display: block;
@@ -264,11 +180,11 @@ text-align: center;
     }
     .nav{
         display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin: 0;
-  width: 100%;
-  height:fit-content;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+    height:fit-content;
     }
     .nav1{
         margin: auto;
@@ -281,8 +197,6 @@ text-align: center;
         font-size: 1rem;
         margin:0;
         font-weight: 600;
-      
-
     }
     .review{
         margin-top: 0;

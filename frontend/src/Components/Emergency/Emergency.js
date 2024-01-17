@@ -1,25 +1,19 @@
 import React from 'react'
 import "./Emergency.css"
 import {Link} from "react-router-dom"
-import Logo from '../Logo/Logo'
 import Footer from '../Footer/Footer'
-import PLogo from '../ProfileLogo/PLogo'
+import swaaslogo from '../SwaasIcons/swaaslogo.png'
 const Emergency = () => {
   return (
     <div>
-      <header className='header'>
-        {/* <div className="logo"></div> */}
-        <Link to="/"><Logo/></Link>
-
-        {/* <div className="profile-photo"></div> */}
-        <Link to="/Profile"><PLogo/></Link>
+      <header className='header-aboutus'>
+      <img src={swaaslogo} alt="swaas" className='swaas-logo'></img>
       </header>
-
     <div id="medicalbook">
         <div>
             <h1>Emergency Medical Book Page</h1> 
             <p>Medical emergency? Contact with us in 60 seconds</p> 
-          <div className="Adi">  <button id="bookmedical" ><a href="">Book Now</a></button>
+          <div className="Adi"><button id="bookmedical" >Book Now</button>
           </div> </div>
         <div className='medicalbookpic'>
                   </div>
@@ -35,37 +29,10 @@ const Emergency = () => {
             <p>Famous:</p>
             <p>address</p>
         </div>
-        <button><a href="/">View Now</a></button>
+        <button><Link to="/">View Now</Link></button>
     </div>
-    <div class="hospitaldetail">
-    <div className="photoDocEmer"></div>
-
-        <div>
-            <h2>Name of Hospital</h2>
-            <p>Famous:</p>
-            <p>address</p>
-        </div>
-        <button><a href="">View Now</a></button>
+    <Footer/>
     </div>
-    <div class="hospitaldetail">
-    <div className="photoDocEmer"></div>
-        <div>
-            <h2>Name of Hospital</h2>
-            <p>Famous:</p>
-            <p>address</p>
-        </div>
-        <button><a href="">View Now</a></button>
-    </div>
-    <div class="hospitaldetail">
-    <div className="photoDocEmer"></div>
-        <div>
-            <h2>Name of Hospital</h2>
-            <p>Famous:</p>
-            <p>address</p>
-        </div>
-        <button><a href="">View Now</a></button>
-    </div>
-<Footer/>    </div>
   )
 }
 

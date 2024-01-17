@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import Navbar from "../../Navbar/Navbar";
 import "./Register.css";
 import { Link } from "react-router-dom";
 
@@ -20,9 +20,8 @@ function PatientRegister() {
     pincode: "",
     email: "",
     phone: "",
-    gender:"",
-    image:""
-
+    gender: "",
+    image: ""
   })
 
   const handleChange = (e) => {
@@ -42,14 +41,10 @@ function PatientRegister() {
 
   return (
     <>
-      <header className="header">
-        <div className="logo"></div>
-        <div className="profile-photo"></div>
-      </header>
+      <Navbar/>
       <h2 className="heading">Patient Register</h2>
       <div className="Register">
         <div className="RegistrationPhoto"></div>
-
         <div className="registrationForm">
           <form method="post" action="" onSubmit={handleSubmit} >
             <div className="doc-sign">

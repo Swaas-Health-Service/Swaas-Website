@@ -9,7 +9,6 @@
     margin: 0;
 }
 .logo{
-    /* background-image: url("./Assets/logo.png"); */
     background-size: cover;
     height: 80px;
     width: 160px;
@@ -18,7 +17,6 @@
 
 
 .profile-photo{
-    /* background-image: url("./Assets/profile-photo.png"); */
     background-size: cover;
     height: 80px;
     width: 80px;

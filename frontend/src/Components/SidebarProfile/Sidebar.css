@@ -4,20 +4,20 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color:#0D6869;
+    background-color: #0D6869;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     color: white;
     z-index: 1;
     border-radius: 1rem;
-    
+
 }
 
 .sidebarProfile.open {
     width: 250px;
-    top:5rem;
-    
+    top: 5rem;
+
 }
 
 .sidebarProfile p {
