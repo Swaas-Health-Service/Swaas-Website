@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import SignUp from "./Components/SignUp/Signup";
 import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance";
 import Emergency from "./Components/Emergency/Emergency";
