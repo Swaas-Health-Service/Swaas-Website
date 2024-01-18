@@ -1,13 +1,25 @@
-import React from 'react'
 import './OPD.css'
-import {Link} from "react-router-dom"
-import Logo from '../Logo/Logo'
+import {Link,useNavigate} from "react-router-dom"
 import Footer from '../Footer/Footer'
 import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 import { indiancities } from './Location'
-import PLogo from '../ProfileLogo/PLogo'
+import PLogo from "../ProfileLogo/PLogo"
+import swaaslogo from '../SwaasIcons/swaaslogo.png'
+import cardiologist from '../SwaasIcons/stethoscope.png'
+import dentist from '../SwaasIcons/dentist.png'
+import gynecologist from '../SwaasIcons/gynecologist.png'
+const OPD = (props) => {
+  const {loggedIn}=props
+   const navigate=useNavigate();
 
-const OPD = () => {
+   const onButtonClick = () => {
+    if (loggedIn) {
+        props.setLoggedIn(false)
+    } else {
+        navigate("/Registration")
+    }
+   }
+
     const handleOnSearch = (string, results) => {
         console.log(string, results);
       };
@@ -38,68 +50,77 @@ const OPD = () => {
       };
     return (
             <div>
-<header className='header'>
-        {/* <div className="logo"></div> */}
-        <Link to="/"><Logo/></Link>
-        <div className="SearchBox"style={{ width: 400,marginTop:"1rem" }}>
-        
-          <ReactSearchAutocomplete
-            items={indiancities}
-            onSearch={handleOnSearch}
-            onHover={handleOnHover}
-            onSelect={handleOnSelect}
-            onFocus={handleOnFocus}
-            onClear={handleOnClear}
-            styling={{ zIndex: 0 }} // To display it on top of the search box below
-            autoFocus
-          />
+<header className='opd-header'>
+        <Link to="/"><img src={swaaslogo} alt="swaas" className='swaas-logo-opd'/></Link>
+        <div className='opd-navbar'>
+        <div className="nav-bar">
+            <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
+            <Link to='/teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
+            <Link to='/medicalreports'><div className='navbar-elements'>Medical Reports</div> </Link>
+            <Link to='/insurance'><div className='navbar-elements'>Insurance</div></Link>
+            <Link to='/aboutus'><div className='navbar-elements'>About Us</div></Link>
+        </div>
+      </div>
+        <div className="LoginButtonHome-opd">
+            <input type="button" onClick={onButtonClick} className="inputButtonLogin" value={loggedIn ? "Log out":"Log in"} />
+            {(loggedIn ?<PLogo/>:<div/>
+            )}
+        </div>
+        <div className='opd-doctor-search'>
+          <div className="SearchBox"style={{ width: 400,marginTop:"1rem" }}>
+            <ReactSearchAutocomplete
+              items={indiancities}
+              onSearch={handleOnSearch}
+              onHover={handleOnHover}
+              onSelect={handleOnSelect}
+              onFocus={handleOnFocus}
+              onClear={handleOnClear}
+              styling={{ zIndex: 0 }}
+              autoFocus
+              placeholder='Speciality'
+            />
+            </div>
+            <div className="SearchBox"style={{ width: 400,marginTop:"1rem" }}>
+            <ReactSearchAutocomplete
+              items={indiancities}
+              onSearch={handleOnSearch}
+              onHover={handleOnHover}
+              onSelect={handleOnSelect}
+              onFocus={handleOnFocus}
+              onClear={handleOnClear}
+              styling={{ zIndex: 0 }}
+              autoFocus
+              placeholder='Location'
+            />
+            </div>
           </div>
-        {/* <input type="text" id="textboxopd" placeholder="City,State" /> */}
-      
-        {/* <div className="profile-photo"></div> */}
-        <Link to="/Profile"><PLogo/></Link>
-      </header>
-                
-                        
-                   
+
+      </header> 
                 <div id="opdbody">
-                    <h1 style={{marginBottom:"2rem"}}>Choose the Speciality of Doctor</h1>
-                    <div id="opdimages">
-                        <div class="opdimg">
-                            <h3>Dentist</h3>
-                            <div className="Adi"><div className="tooth"></div></div>
-                            <input className="custom-radio"type="radio" name="programmingLanguage" value="Ruby"></input>
-                        </div>
-                        <div class="opdimg">
-                            <h3>Cardiologist</h3>
-                           <div className="Adi"> <div className="stethoscope"></div></div>
-                            <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
-                        </div>
-                        <div class="opdimg">
-                            <h3>Physician</h3>
-                       <div className="Adi"> <div className="hand"></div>
-                       </div>
-                        <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
-                        </div>
-                        <div class="opdimg">
-                            <h3>Gynecologist</h3>
-                           <div className="Adi"> <div className="bed"></div></div>
-                            <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
-                        </div>
-                        <div class="opdimg">
-                            <h3>Homeopath</h3>
-                       <div className="Adi"> <div className="homeo"></div></div>
-                        <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
-                        </div>
-                        <div class="opdimg">
-                            <h3>Ayurveda</h3>
-                           <div className="Adi"> <div className="yoga"></div></div>
-                            <input type="radio" className="custom-radio"name="programmingLanguage" value="Ruby"></input>
-                        </div>
+                    <div className='opd-speciality-heading'>Choose the Speciality of Doctor</div>
+                    <div className='opd-speciality'>
+                      <div className='opd-speciality-card'>
+                        <div className='opd-speciality-card-text'>Cardiologist</div>
+                        <img src={cardiologist} alt="" className='opd-speciality-card-image'/>
+                      </div>
+                      <div className='opd-speciality-card'>
+                        <div className='opd-speciality-card-text'>General Physician</div>
+                        <img src={cardiologist} alt="" className='opd-speciality-card-image'/>
+                      </div>
+                      <div className='opd-speciality-card'>
+                        <div className='opd-speciality-card-text'>Dentist</div>
+                        <img src={dentist} alt="" className='opd-speciality-card-image'/>
+                      </div>
+                      <div className='opd-speciality-card'>
+                        <div className='opd-speciality-card-text'>Gynecologist</div>
+                        <img src={gynecologist} alt="" className='opd-speciality-card-image'/>
+                      </div>
+                      <div className='opd-speciality-card'>
+                        <div className='opd-speciality-card-text'>Orthologist</div>
+                        <img src={cardiologist} alt="" className='opd-speciality-card-image'/>
+                      </div>
                     </div>
                 </div>
-
-                {/* <div className="footer"></div> */}
                 <Footer/>
             </div>
             )

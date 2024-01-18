@@ -1,80 +1,35 @@
 import React from 'react'
 import "./Doctors.css";
 import {Link} from "react-router-dom"
-import Logo from '../Logo/Logo'
 import Footer from '../Footer/Footer';
-import PLogo from '../ProfileLogo/PLogo';
+import Navbar from '../Navbar/Navbar';
 const Doctors = () => {
   return (
     <div>
-       <header className="header">
-        {/* <div className="logo"></div> */}
-        <Link to="/"><Logo/></Link>
-        <Link to="/Profile"><PLogo/></Link>
-        {/* <div className="profile-photo"></div> */}
-    </header>
-    <div className="infoDoc">XXX Available Doctors Now </div>
-    <div className="profileDoc-info">
-        <div className="photoDoc"></div>
-        <div className="ins">
-            <p id="ins1">Name,Experience</p>
-            <p id="ins2">18 year experience overall</p>
-            <p id="ins3">All these expertises</p>
-            <p id="ins4"><a href="/">View Profile</a></p>
-            <p id="ins5">Address</p>
-            <div className="button1">100%</div>
+        <Navbar/>
+    <div className="infoDoc">Available Doctors Now</div>
+    <div>
+    <div className="doctor-details-card">
+        <div className="doctor-profile-image"></div>
+        <div className='doctor-details'>
+        <ul className='doctor-details-list'>
+            <li>Name,Experience</li>
+            <li>18 year experience overall</li>
+            <li>All these expertises</li>
+            <li>Address</li>
+            <li>Ratings:</li>
+
+            </ul>
+            <Link to="/"><button>View Profile</button></Link>
         </div>
         <div className="buttonDoc">
             <button className="btnDoc">Connect Now</button>
-            <p className="btn-info">500 Consultation Fee</p>
+            <div className="btn-info">500 Consultation Fee</div>
         </div>
     </div>
-    <div className="profileDoc-info">
-        <div className="photoDoc"></div>
-        <div className="ins">
-            <p id="ins1">Name,Experience</p>
-            <p id="ins2">18 year experience overall</p>
-            <p id="ins3">All these expertises</p>
-            <p id="ins4"><a href="/">View Profile</a></p>
-            <p id="ins5">Address</p>
-            <div className="button1">100%</div>
-        </div>
-        <div className="buttonDoc">
-            <button className="btnDoc">Connect Now</button>
-            <p className="btn-info">500 Consultation Fee</p>
-        </div>
     </div>
-    <div className="profileDoc-info">
-        <div className="photoDoc"></div>
-        <div className="ins">
-            <p id="ins1">Name,Experience</p>
-            <p id="ins2">18 year experience overall</p>
-            <p id="ins3">All these expertises</p>
-            <p id="ins4"><a href="/">View Profile</a></p>
-            <p id="ins5">Address</p>
-            <div className="button1">100%</div>
-        </div>
-        <div className="buttonDoc">
-            <button className="btnDoc">Connect Now</button>
-            <p className="btn-info">500 Consultation Fee</p>
-        </div>
+    <Footer/>
     </div>
-    <div className="profileDoc-info">
-        <div className="photoDoc"></div>
-        <div className="ins">
-            <p id="ins1">Name,Experience</p>
-            <p id="ins2">18 year experience overall</p>
-            <p id="ins3">All these expertises</p>
-            <p id="ins4"><a href="/">View Profile</a></p>
-            <p id="ins5">Address</p>
-            <div className="button1">100%</div>
-        </div>
-        <div className="buttonDoc">
-            <button className="btnDoc">Connect Now</button>
-            <p className="btn-info">500 Consultation Fee</p>
-        </div>
-    </div>
-<Footer/>    </div>
   )
 }
 
