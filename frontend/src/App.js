@@ -18,7 +18,6 @@ import PatientRegister from "./Components/Registration/Patient/Register";
 import DoctorRegister from "./Components/Registration/Doctor/Register";
 import PatientReports from "./Components/Profile/PatientReports/PatientReports";
 import Doctor from "./Components/Profile/doctorprofile/doctor";
-=======
 import {BrowserRouter as Main,Routes,Route} from "react-router-dom";
 import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance"
 import Emergency from "./Components/Emergency/Emergency"
@@ -39,19 +38,15 @@ import PatientLogin from "./Components/Registration/Patient/Login"
 import { useState } from "react";
 import PatientProfile from "./Components/Profile/PatientProfile";
 import Login from "./Components/Registration/Login";
->>>>>>> 220c95c1f251f7f36abcc29de00192d27f7b1935
 const App = () => {
   const [loggedIn,setLoggedIn]= useState(false)
   const [email,setEmail]=useState("")
   return (
-    <>
-<<<<<<< HEAD
       <div>
-        {/* <Main>
-=======
+         
+  <Main>
     <div>
-      <Main>
->>>>>>> 220c95c1f251f7f36abcc29de00192d27f7b1935
+      {/*<Main>
         <Routes>
           <Route exact path='/medicine' element={<MedicineNew/>}/> 
           <Route exact path='/aboutus' element={<About/>}/> 
@@ -74,7 +69,6 @@ const App = () => {
           <Route exact path='/doctors' element={<Doctors/>}/>
           <Route exact path='/login' element={<Login/>}/>
         </Routes>
-<<<<<<< HEAD
       </Main> */}
         {/* <PatientList/> */}
         {/* <PatientRegister/> */}
@@ -82,12 +76,8 @@ const App = () => {
         {/* <PatientReports/> */}
         <Doctor />
         </div>
-=======
       </Main>
     </div>
-      
->>>>>>> 220c95c1f251f7f36abcc29de00192d27f7b1935
-    </>
   );
 };
 
