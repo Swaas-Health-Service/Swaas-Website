@@ -1,23 +1,3 @@
-
-import SignUp from "./Components/SignUp/Signup";
-import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance";
-import Emergency from "./Components/Emergency/Emergency";
-import HomePage from "./Components/HomePage/HomePage";
-import MentalHealth from "./Components/MentalHealth/MentalHealth";
-import OPD from "./Components/OPD/OPD";
-import Pathology from "./Components/Pathology/Pathology";
-import Profile from "./Components/Profile/Profile";
-import Teleconsultation from "./Components/Teleconsultation/Teleconsultation";
-import Doctors from "./Components/Doctors/Doctors";
-import About from "./Components/AboutUS/About";
-import MedicineNew from "./Components/Medicine-New/MedicineNew";
-import { BrowserRouter as Main, Routes, Route } from "react-router-dom";
-import PatientDetails from "./Components/PatientList/PatientList";
-import PatientList from "./Components/PatientList/PatientList";
-import PatientRegister from "./Components/Registration/Patient/Register";
-import DoctorRegister from "./Components/Registration/Doctor/Register";
-import PatientReports from "./Components/Profile/PatientReports/PatientReports";
-import Doctor from "./Components/Profile/doctorprofile/doctor";
 import {BrowserRouter as Main,Routes,Route} from "react-router-dom";
 import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance"
 import Emergency from "./Components/Emergency/Emergency"
@@ -36,14 +16,16 @@ import PatientReports from "./Components/Profile/PatientReports/PatientReports"
 import Registration from "./Components/Registration/Registration"
 import PatientLogin from "./Components/Registration/Patient/Login"
 import { useState } from "react";
+import Doctortele from "./Components/Profile/doctorprofile/doctor";
 import PatientProfile from "./Components/Profile/PatientProfile";
 import Login from "./Components/Registration/Login";
 const App = () => {
   const [loggedIn,setLoggedIn]= useState(false)
   const [email,setEmail]=useState("")
   return (
-      <div>
-    <div>
+    <>
+    {/* <div>
+      <Main>
         <Routes>
           <Route exact path='/medicine' element={<MedicineNew/>}/> 
           <Route exact path='/aboutus' element={<About/>}/> 
@@ -66,14 +48,11 @@ const App = () => {
           <Route exact path='/doctors' element={<Doctors/>}/>
           <Route exact path='/login' element={<Login/>}/>
         </Routes>
-    </div>
-        {/* <PatientList/> */}
-        {/* <PatientRegister/> */}
-         {/* <DoctorRegister/>  */}
-        {/* <PatientReports/> */}
-        {/* <Doctor /> */}
-    </div>
-  );
-};
+      </Main>
+    </div> */}
+      <Doctortele />
+    </>
+  )
+}
 
-export default App;
+export default App
