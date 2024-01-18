@@ -7,9 +7,6 @@
 }
 
 .box-decoration {
-    /* border: 2px dashed #ccc;
-    border-radius: 5px;
-    padding: 130px 100px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +43,6 @@
     background-size: cover;
     height: 200px;
     width: 200px;
-    /* margin-left: 35px; */
 }
 
 .img-display-after {

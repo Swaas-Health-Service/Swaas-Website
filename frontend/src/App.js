@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import SignUp from "./Components/SignUp/Signup";
 import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance";
 import Emergency from "./Components/Emergency/Emergency";
@@ -17,27 +18,63 @@ import PatientRegister from "./Components/Registration/Patient/Register";
 import DoctorRegister from "./Components/Registration/Doctor/Register";
 import PatientReports from "./Components/Profile/PatientReports/PatientReports";
 import Doctor from "./Components/Profile/doctorprofile/doctor";
+=======
+import {BrowserRouter as Main,Routes,Route} from "react-router-dom";
+import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance"
+import Emergency from "./Components/Emergency/Emergency"
+import HomePage from "./Components/HomePage/HomePage"
+import MentalHealth from "./Components/MentalHealth/MentalHealth"
+import OPD from "./Components/OPD/OPD"
+import Pathology from "./Components/Pathology/Pathology"
+import Teleconsultation from "./Components/Teleconsultation/Teleconsultation"
+import Doctors from "./Components/Doctors/Doctors"
+import About from "./Components/AboutUS/About"
+import MedicineNew from "./Components/Medicine-New/MedicineNew"
+import PatientList from "./Components/PatientList/PatientList"
+import PatientRegister from "./Components/Registration/Patient/Register"
+import DoctorRegister from "./Components/Registration/Doctor/Register"
+import PatientReports from "./Components/Profile/PatientReports/PatientReports"
+import Registration from "./Components/Registration/Registration"
+import PatientLogin from "./Components/Registration/Patient/Login"
+import { useState } from "react";
+import PatientProfile from "./Components/Profile/PatientProfile";
+import Login from "./Components/Registration/Login";
+>>>>>>> 220c95c1f251f7f36abcc29de00192d27f7b1935
 const App = () => {
+  const [loggedIn,setLoggedIn]= useState(false)
+  const [email,setEmail]=useState("")
   return (
     <>
+<<<<<<< HEAD
       <div>
         {/* <Main>
+=======
+    <div>
+      <Main>
+>>>>>>> 220c95c1f251f7f36abcc29de00192d27f7b1935
         <Routes>
-          <Route exact path='/MedicineNew'element={<MedicineNew/>}/> 
-          <Route exact path='/About'element={<About/>}/> 
-          <Route exact path='/BillsandInsuarance'element={<BillsandInsuarance/>}/>       
-          <Route exact path='/Emergency' element={<Emergency/>}/>       
-          <Route exact path='/' element={<HomePage/>}/>            
-          <Route exact path='/Medicine' element={<MedicineNew/>}/>       
-          <Route exact path='/MentalHealth' element={<MentalHealth/>}/>       
+          <Route exact path='/medicine' element={<MedicineNew/>}/> 
+          <Route exact path='/aboutus' element={<About/>}/> 
+          <Route exact path='/insurance' element={<BillsandInsuarance/>}/>       
+          <Route exact path='/emergency' element={<Emergency/>}/>       
+          <Route exact path='/' element={<HomePage email={email} loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>}/>                
+          <Route exact path='/mentalhealth' element={<MentalHealth/>}/>       
           <Route exact path='/OPD' element={<OPD/>}/>       
-          <Route exact path='/Pathology' element={<Pathology/>}/>       
-          <Route exact path='/Profile' element={<Profile/>}/>       
-          <Route exact path='/SignUp' element={<SignUp/>}/>       
-          <Route exact path='/Teleconsultation' element={<Teleconsultation/>}/> 
-          <Route exact path='/Doctors' element={<Doctors/>}/> 
-          <Route exact path='/PatientReport' element={<PatientReports/>}/> 
+          <Route exact path='/pathology' element={<Pathology/>}/>       
+          <Route exact path="/patientprofile" element={<PatientProfile/>}/>   
+          <Route exact path='/registration' element={<Registration/>}/>       
+          <Route exact path='/teleconsultation' element={<Teleconsultation/>}/> 
+          <Route exact path='/doctors' element={<Doctors/>}/> 
+          <Route exact path='/patientreport' element={<PatientReports/>}/>
+          <Route exact path='/patientlist' element={<PatientList/>}/>
+          <Route exact path='/patientregister' element={<PatientRegister/>}/>
+          <Route exact path='/patientsignin' element={<PatientLogin setLoggedIn={setLoggedIn} setEmail={setEmail}/>}/>
+          <Route exact path='/doctorregister' element={<DoctorRegister/>}/>
+          <Route exact path='/patienreports' element={<PatientReports/>}/>
+          <Route exact path='/doctors' element={<Doctors/>}/>
+          <Route exact path='/login' element={<Login/>}/>
         </Routes>
+<<<<<<< HEAD
       </Main> */}
         {/* <PatientList/> */}
         {/* <PatientRegister/> */}
@@ -45,6 +82,11 @@ const App = () => {
         {/* <PatientReports/> */}
         <Doctor />
         </div>
+=======
+      </Main>
+    </div>
+      
+>>>>>>> 220c95c1f251f7f36abcc29de00192d27f7b1935
     </>
   );
 };

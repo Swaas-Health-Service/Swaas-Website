@@ -1,21 +1,40 @@
-import React from 'react'
 import "./BillsandInsuarance.css"
-import {Link} from "react-router-dom"
-import Logo from '../Logo/Logo'
+import {Link,useNavigate} from "react-router-dom"
 import Footer from '../Footer/Footer'
 import Review from '../Review/Review'
 import PLogo from '../ProfileLogo/PLogo'
+import swaaslogo from '../SwaasIcons/swaaslogo.png'
+const BillsandInsuarance = (props) => {
+    const {loggedIn}=props
+   const navigate=useNavigate();
 
-const BillsandInsuarance = () => {
+   const onButtonClick = () => {
+    if (loggedIn) {
+        // localStorage.removeItem("user")
+        props.setLoggedIn(false)
+    } else {
+        navigate("/Registration")
+    }
+   }
   return (
     <div>
-     <header className='header'>
-        {/* <div className="logo"></div> */}
-        <Link to="/"><Logo/></Link>
-
-        {/* <div className="profile-photo"></div> */}
-        <Link to="/Profile"><PLogo/></Link>
-      </header>
+     <header className='headerHome'>
+        <div className="dropdown">
+        </div>
+        <img src={swaaslogo} alt="swaas" className='swaas-logo'/>
+        <div className="nav-bar">
+            <Link to='/OPD'><div className='navbar-elements'>OPD Booking</div></Link>
+            <Link to='/teleconsultation'><div className='navbar-elements'>Teleconsulation</div></Link>
+            <Link to='/medicalreports'><div className='navbar-elements'>Medical Reports</div> </Link>
+            <Link to='/insurance'><div className='navbar-elements'>Insurance</div></Link>
+            <Link to='/aboutus'><div className='navbar-elements'>About US</div></Link>
+        </div>
+        <div className="LoginButtonHome">
+            <input type="button" onClick={onButtonClick} className="inputButtonLogin" value={loggedIn ? "Log out":"Log in"} />
+            {(loggedIn ?<PLogo/>:<div/>
+            )}
+        </div>
+    </header>
 
           <div id="bills">
        <div className="Adi"> <div className='billimg'></div></div>

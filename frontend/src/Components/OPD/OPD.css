@@ -1,281 +1,102 @@
-*{
-    padding: 0;
-    margin: 0;
+.opd-header{
+    height: 250px;
+    width: 100vw;
+    background:#0D6869;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-
-body {
-    background: #CAF4F4;;
+.opd-navbar{
+    position: absolute;
+    top:2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
 }
-#textboxopd {
-    width: 500px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    border: 1px solid #000;
-    background: #DFF8F8;
-    font-size: larger;
-    margin-top: 0.8rem;
+.swaas-logo-opd{
+  position: absolute;
+  left:0;
+  top: 2vh;
+  margin: 10px;
+  height: 43px;
+  width: 141px;
+}
+.LoginButtonHome-opd{
+  width: -moz-fit-content;
+  width: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top:1vh;
+}
+.opd-doctor-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 20px;
+
 }
 #opdimages {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-h1 {
-    display: flex;
-    justify-content: center;
-    color: #0D6869;
-    font-family: Inter;
+
+.opd-speciality-heading{
+  font-size: 2rem;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-#opdbody {
-    padding-top: 30px;
-    height: 650px;
+
+.opd-speciality{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.opd-speciality-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1rem;
+
+}
+.opd-speciality-card-image{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer{
-
     height: 400px;
     width: 100vw;
     background:linear-gradient(#45969F,#45969F);
   }
-  .custom-radio {
-    display: inline-block;
-    position: relative;
-    padding-left: 25px;
-    margin-right: 15px;
-    cursor: pointer;
-    width: 20px; /* Increase the width to make the radio button larger */
-    height: 20px;
-}
-
-.custom-radio::before {
-    content: "";
-    display: inline-block;
-   
-    border: 2px solid #3498db;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 1px;
-}
 
 .opdimg {
-    background: #CAEFD1;
+    background: white;
     height: 400px;
     width: 200px;
     color: #0D6869;
-    /* padding-top: 5px; */
     text-align: center;
     border-radius: 1.5rem;
 }
-.opdimg:hover{
-    transform: scale(1.05);
-     /* Scale the element to 120% of its original size on hover */
-     background: #45969F;
 
-}
-.tooth {
-    margin-top: 60px;
-    width: 180px;
-    height: 269px;
-/* background-image: url("./images/tooth.png"); */
-background-image: url("../SwaasIcons/tooth.png");
-
-background-size: cover;
-}
-.stethoscope {
-    margin-top: 120px;
-    width: 180px;
-    height: 210px;
-/* background-image: url("./images/stethoscope.png"); */
-background-image: url("../SwaasIcons/stethoscope.png");
-
-background-size: cover;
-}
-.hand {
-    margin-top: 60px;
-    width: 180px;
-    height: 200px;
-/* background-image: url("./images/hand.png"); */
-background-image: url("../SwaasIcons/hand.png");
-
-background-size: cover;
-}
-.bed{
-    margin-top: 120px;
-    width: 180px;
-    height: 200px;
-/* background-image: url("./images/bed.png"); */
-background-image: url("../SwaasIcons/bed.png");
-
-background-size: cover;
-}
-.homeo {
-    margin-top: 60px;
-    width: 180px;
-    height: 200px;
-/* background-image: url("./images/homeo.png"); */
-background-image: url("../SwaasIcons/homeo.png");
-
-background-size: cover;
-}
-.yoga {
-    margin-top: 120px;
-    width: 180px;
-height: 200px;
-/* background-image: url("./images/yoga.png"); */
-background-image: url("../SwaasIcons/yoga.png");
-
-background-size: cover;
-}
-@media screen and (min-width:600px) and  (max-width:900px){
-    #opdbody{
-        height: fit-content;
-        width: 100%;
-    }
-    #opdimages{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-      gap: 5px;
-      height:fit-content;
-     
-    }
-    .opdimg{
-        margin: 0.5rem;
-        height: fit-content;
-        margin: 1rem auto;
-      }
-      .opdimg h3{
-        font-size: 1rem;
-        font-weight: 600;
-      }
-      .tooth{
-        height:9rem;
-        width:6rem;
-        margin: 0;
-      }
-      .stethoscope,.yoga{
-        height:9rem;
-        width:7.5rem;
-        margin: 0;
-      }
-      .hand,.bed,.homeo{
-        height:9rem;
-        width:9rem;
-        margin: 0;
-      }
-}
-@media screen and (min-width:377px) and  (max-width:435px) {
-    #opdbody{
-        height: fit-content;
-        width: 100%;
-    }
-    #opdimages{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      height:fit-content;
-     
-    }
-    .opdimg{
-        margin: 0.5rem;
-        height: fit-content;
-        margin: 1rem auto;
-      }
-      .opdimg h3{
-        font-size: 1rem;
-        font-weight: 600;
-      }
-      .tooth{
-        height:7.5rem;
-        width:4.5rem;
-        margin: 0;
-      }
-      .stethoscope,.yoga{
-        height:7.5rem;
-        width:6rem;
-        margin: 0;
-      }
-      .hand,.bed,.homeo{
-        height:7.5rem;
-        width:7.5rem;
-        margin: 0;
-      }
-}
-@media screen and (min-width:435px) and (max-width:600px) {
-    #opdbody{
-        height: fit-content;
-        width: 100%;
-    }
-    #opdimages{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      height:fit-content;
-     
-    }
-    .opdimg{
-        margin: 0.5rem;
-        height: fit-content;
-        margin: 1rem auto;
-      }
-      .opdimg h3{
-        font-size: 1rem;
-        font-weight: 600;
-      }
-      .tooth{
-        height:9rem;
-        width:6rem;
-        margin: 0;
-      }
-      .stethoscope,.yoga{
-        height:9rem;
-        width:7.5rem;
-        margin: 0;
-      }
-      .hand,.bed,.homeo{
-        height:9rem;
-        width:9rem;
-        margin: 0;
-      }
-}
-@media screen  and (max-width:377px) {
-    #opdimages{
-       display: flex;
-       flex-direction: column;
-       height: fit-content;
-      }
-      .opdimg{
-        margin: 1rem;
-        height: fit-content;
-      }
-      .opdimg h3{
-        font-size: 1rem;
-        font-weight: 600;
-      }
-      .tooth{
-        height:9rem;
-        width:6rem;
-        margin: 0;
-      }
-      .stethoscope,.yoga{
-        height:9rem;
-        width:7.5rem;
-        margin: 0;
-      }
-      .hand,.bed,.homeo{
-        height:9rem;
-        width:9rem;
-        margin: 0;
-      }
-      }
-@media screen and (max-width:900px){
-    .SearchBox{
-        display: none;
-    }
-    #opdbody h1{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-   
-}

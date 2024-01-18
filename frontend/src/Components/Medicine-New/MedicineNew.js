@@ -1,21 +1,16 @@
 import React from 'react'
 import  "./MedicineNew.css"
 import {Link} from "react-router-dom"
-import Logo from '../Logo/Logo'
-import Footer from '../Footer/Footer'
-import Review from '../Review/Review'
 import PLogo from '../ProfileLogo/PLogo'
+import swaaslogo from '../SwaasIcons/swaaslogo.png'
 const MedicineNew = () => {
   return (
     <div>
       <header>
-        {/* <div class="logo"></div> */}
-        <div className="medLogo"><Link to="/"><Logo/></Link>
-        </div>
+        <img src={swaaslogo} alt="swaas" className='swaas-logo'/>
         <input type="search" class="med-search" placeholder=" Search for medicines and more"/>
         <button class="cart"> <i class="fa-solid fa-cart-plus"></i> View Cart</button>
-        {/* <div class="profile-photo"></div> */}
-       <div className="medProfile"> <Link to="/Profile"><PLogo/></Link></div>
+       <div className="medProfile"> <Link to="/patientprofile"><PLogo/></Link></div>
     </header>
     <div className="medi">
     <div class="main-head">Browse Medicines and Health Products</div>
@@ -38,12 +33,6 @@ const MedicineNew = () => {
         </div>
     </div>
     </div>
-   <div className="medReview"> <Review/></div>
-    {/* <div className="review">
-          <p>Reviews</p>
-      </div> */}
-      {/* <div className="footer"></div> */}
-<Footer/>
     </div>
   )
 }
