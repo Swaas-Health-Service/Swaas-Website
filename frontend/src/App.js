@@ -43,10 +43,7 @@ const App = () => {
   const [email,setEmail]=useState("")
   return (
       <div>
-         
-  <Main>
     <div>
-      {/*<Main>
         <Routes>
           <Route exact path='/medicine' element={<MedicineNew/>}/> 
           <Route exact path='/aboutus' element={<About/>}/> 
@@ -69,14 +66,12 @@ const App = () => {
           <Route exact path='/doctors' element={<Doctors/>}/>
           <Route exact path='/login' element={<Login/>}/>
         </Routes>
-      </Main> */}
+    </div>
         {/* <PatientList/> */}
         {/* <PatientRegister/> */}
          {/* <DoctorRegister/>  */}
         {/* <PatientReports/> */}
-        <Doctor />
-        </div>
-      </Main>
+        {/* <Doctor /> */}
     </div>
   );
 };
