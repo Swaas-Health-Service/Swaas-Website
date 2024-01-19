@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.doctorhome{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+}
+.doctorhome__right__top{
+    width:81vw;
+    height:11vh;
+    background-color: #98c1d9;
+    display: flex;
+}
+.image{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 1em 1em 1em 1em;
+}
+.name{
+    font-size: 2em;
+    font-weight: 500;
+    color:#012350;
+}
+.designation{
+    margin-left:2vw;
+    margin-top:-0.2vw;
+    color:#e2e5e8;
+}
+.call{
+    position: absolute;
+    right:3vw;
+    top:1.5vw;
+}
+.detailsofdoctor{
+    width: moz-fit-content;
+    height:89vh;
+    padding: 1vw;
+    overflow-x: hidden;
+}
+.maincardhead{
+    font-size: xx-large;
+    font-weight: 500;
+    color:#012350
+}
+.maincard{
+    background-color: #98C1D9;
+    padding: 1vw;
+    max-width:65vw;
+    height:fit-content;
+    margin:1vw;
+    /* setting a good box shadow with blurr effevct */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height:moz-fit-content;
+    border-radius: 10px;
+}
+.short{
+    font-size: large;
+    font-weight: 700;
+    display: inline;
+    margin:0.5vw;
+}
+.span{
+    display: inline;
+}

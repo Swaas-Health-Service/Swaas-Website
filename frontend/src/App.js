@@ -19,6 +19,7 @@ import { useState } from "react";
 import Doctortele from "./Components/Profile/doctorprofile/doctor";
 import PatientProfile from "./Components/Profile/PatientProfile";
 import Login from "./Components/Registration/Login";
+import Doctorhome from "./Components/Profile/doctorprofilehome/doctorhome";
 const App = () => {
   const [loggedIn,setLoggedIn]= useState(false)
   const [email,setEmail]=useState("")
@@ -50,7 +51,7 @@ const App = () => {
         </Routes>
       </Main>
     </div> */}
-      <Doctortele />
+    <Doctorhome />
     </>
   )
 }

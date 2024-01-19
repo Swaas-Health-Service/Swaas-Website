@@ -49,7 +49,7 @@ export default function Doctorprofile() {
               fill="white"
               viewBox="0 0 24 24"
               onClick={() => {
-                document.querySelector(".sidebar").style.width = "18vw";
+                document.querySelector(".sidebar").style.width = "19vw";
               }}
             >
               <path d="M0 0h24v24H0z" fill="none" />
