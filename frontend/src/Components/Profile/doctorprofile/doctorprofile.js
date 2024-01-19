@@ -1,12 +1,11 @@
 import React from "react";
-import "./doctor.css";
-import logo from "../../SwaasIcons/swaaslogo.png";
+import { Link } from "react-router-dom";
+import "./Doctor.css";
+import swaaslogo from "../../SwaasIcons/swaaslogo.png";
 
-export default function Doctorprofile() {
+const DoctorProfile=()=> {
   return (
     <div className="doctordashboardright">
-      
-      
       <div className="sidebar">
         <div
           className="close-btn"
@@ -17,47 +16,50 @@ export default function Doctorprofile() {
           </svg>
         </div>
         <div>
-          <h4>Home</h4>
+          <Link to="" className="doctor-dashboard-options">Home</Link>
         </div>
         <div>
-          <h4>My profile</h4>
+          <Link to="" className="doctor-dashboard-options">My Profile</Link>
         </div>
         <div>
-          <h4>Settings</h4>
+          <Link to="" className="doctor-dashboard-options">Settings</Link>
         </div>
         <div>
-          <h4>Opd-bookings</h4>
+          <Link to="" className="doctor-dashboard-options">OPD Bookings</Link>
         </div>
         <div>
-          <h4>Teleconsultations</h4>
+          <Link to="" className="doctor-dashboard-options">TeleConsultation</Link>
         </div>
       </div>
-      <div className="swasslogo-bar">
-        <img src={logo} alt="Logo" />
-      </div>
+      {/* <div className="swasslogo-bar">
+        <img src={swaaslogo} alt="Logo" />
+      </div> */}
       
       
       
       <div className="doctorprofilebar">
-        <div className="doctorprofile">
-          <h5>
-            Health Mentor
-            <svg
+      <img src={swaaslogo} alt="Logo" className="swaas-logo"/>
+      <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="30"
+              height="30"
               fill="white"
               viewBox="0 0 24 24"
               onClick={() => {
-                document.querySelector(".sidebar").style.width = "18vw";
+                document.querySelector(".sidebar").style.width = "15vw";
               }}
             >
               <path d="M0 0h24v24H0z" fill="none" />
               <path d="M4 11h16v2H4v-2zm0-4h16v2H4V7zm0 8h16v2H4v-2z" />
             </svg>
+        <div className="doctorprofile">
+          <h5>
+            Health Mentor
+            
           </h5>
         </div>
         <div>
+        
           <div className="profilephoto"></div>
           <div className="doctorprofilename">Dr. Sagar Kumar Singh</div>
           <div className="doctorprofileID">Dr. ID: 1234456667</div>
@@ -69,3 +71,5 @@ export default function Doctorprofile() {
     </div>
   );
 }
+
+export default DoctorProfile;

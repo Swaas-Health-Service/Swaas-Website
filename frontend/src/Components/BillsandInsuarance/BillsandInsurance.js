@@ -1,10 +1,10 @@
-import "./BillsandInsuarance.css"
+import "./BillsandInsurance.css"
 import {Link,useNavigate} from "react-router-dom"
 import Footer from '../Footer/Footer'
 import Review from '../Review/Review'
 import PLogo from '../ProfileLogo/PLogo'
 import swaaslogo from '../SwaasIcons/swaaslogo.png'
-const BillsandInsuarance = (props) => {
+const BillsandInsurance = (props) => {
     const {loggedIn}=props
    const navigate=useNavigate();
 
@@ -36,7 +36,7 @@ const BillsandInsuarance = (props) => {
         </div>
     </header>
 
-          <div id="bills">
+        <div id="bills">
        <div className="Adi"> <div className='billimg'></div></div>
         <div id="billtext">
             <h1>Pay The Bills Online, Safe and Secured</h1>
@@ -60,14 +60,8 @@ const BillsandInsuarance = (props) => {
     </div>
     
     <h1>Buy Our Insurance</h1>
-    <Review/>
-    {/* <div className="review">
-          <p>Reviews</p>
-      </div> */}
-   {/* <div className="footer"></div> */}
-   <Footer/>
   </div>
   )
 }
 
-export default BillsandInsuarance
+export default BillsandInsurance

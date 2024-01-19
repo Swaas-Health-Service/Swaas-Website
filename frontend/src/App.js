@@ -1,5 +1,5 @@
 import {BrowserRouter as Main,Routes,Route} from "react-router-dom";
-import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance"
+import BillsandInsurance from "./Components/BillsandInsuarance/BillsandInsurance";
 import Emergency from "./Components/Emergency/Emergency"
 import HomePage from "./Components/HomePage/HomePage"
 import MentalHealth from "./Components/MentalHealth/MentalHealth"
@@ -18,25 +18,8 @@ import PatientLogin from "./Components/Registration/Patient/Login"
 import { useState } from "react";
 import PatientProfile from "./Components/Profile/PatientProfile";
 import Login from "./Components/Registration/Login";
-import SignUp from "./Components/SignUp/Signup";
-import BillsandInsuarance from "./Components/BillsandInsuarance/BillsandInsuarance";
-import Emergency from "./Components/Emergency/Emergency";
-import HomePage from "./Components/HomePage/HomePage";
-import MentalHealth from "./Components/MentalHealth/MentalHealth";
-import OPD from "./Components/OPD/OPD";
-import Pathology from "./Components/Pathology/Pathology";
-import Profile from "./Components/Profile/Profile";
-import Teleconsultation from "./Components/Teleconsultation/Teleconsultation";
-import Doctors from "./Components/Doctors/Doctors";
-import About from "./Components/AboutUS/About";
-import MedicineNew from "./Components/Medicine-New/MedicineNew";
-import { BrowserRouter as Main, Routes, Route } from "react-router-dom";
 import PatientDetails from "./Components/PatientList/PatientList";
-import PatientList from "./Components/PatientList/PatientList";
-import PatientRegister from "./Components/Registration/Patient/Register";
-import DoctorRegister from "./Components/Registration/Doctor/Register";
-import PatientReports from "./Components/Profile/PatientReports/PatientReports";
-import Doctor from "./Components/Profile/doctorprofile/doctor";
+import DoctorDashboard from "./Components/Profile/DoctorProfile/DoctorDashboard";
 const App = () => {
   const [loggedIn,setLoggedIn]= useState(false)
   const [email,setEmail]=useState("")
@@ -47,7 +30,7 @@ const App = () => {
         <Routes>
           <Route exact path='/medicine' element={<MedicineNew/>}/> 
           <Route exact path='/aboutus' element={<About/>}/> 
-          <Route exact path='/insurance' element={<BillsandInsuarance/>}/>       
+          <Route exact path='/insurance' element={<BillsandInsurance/>}/>       
           <Route exact path='/emergency' element={<Emergency/>}/>       
           <Route exact path='/' element={<HomePage email={email} loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>}/>                
           <Route exact path='/mentalhealth' element={<MentalHealth/>}/>       
@@ -65,6 +48,7 @@ const App = () => {
           <Route exact path='/patienreports' element={<PatientReports/>}/>
           <Route exact path='/doctors' element={<Doctors/>}/>
           <Route exact path='/login' element={<Login/>}/>
+          <Route exact path='/doctordashboard' element={<DoctorDashboard/>}/>
         </Routes>
       </Main>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import "./doctor.css";
-export default () => {
+import "./Doctor.css";
+const Teleconsultation= () => {
   return (
     <div className="teleconsultationstab">
       <div className="teleconsultation-list">
@@ -12,9 +12,9 @@ export default () => {
             <div className="patientphoto"></div>
           </div>
           <div className="patientname">
-            <div className="Name">Hakuna matata</div>
+            <div className="Name">Shantanu Singh</div>
             <div className="lastmessage">
-              lorem ipsum dolor sit amet consectetu ipsum dolor sit
+              
             </div>
           </div>
           <div className="lastmessagetime">12:00 PM</div>
@@ -24,9 +24,9 @@ export default () => {
             <div className="patientphoto"></div>
           </div>
           <div className="patientname">
-            <div className="Name">Hakuna matata2</div>
+            <div className="Name">Rupam Mahato</div>
             <div className="lastmessage">
-              lorem ipsum dolor sit amet consectetu ipsum dolor sit
+              
             </div>
           </div>
           <div className="lastmessagetime">12:00 PM</div>
@@ -36,9 +36,9 @@ export default () => {
             <div className="patientphoto"></div>
           </div>
           <div className="patientname">
-            <div className="Name">Hakuna matata3</div>
+            <div className="Name">Aditya Yadav</div>
             <div className="lastmessage">
-              lorem ipsum dolor sit amet consectetu ipsum dolor sit
+              
             </div>
           </div>
           <div className="lastmessagetime">12:00 PM</div>
@@ -47,19 +47,21 @@ export default () => {
       <div className="teleconsultationchats">
         <div className="chatboxtitle">
           <div className="patientphoto inchat"></div>
-          <div className="namecontainer inchat">Hakuna matata lallel</div>
+          <div className="namecontainer inchat">Shantanu Singh</div>
         </div>
         <div className="message">
-        kjbkabsvkd  p98wfwehfohqfq  hwfliwekjhf hfiuhwaelif hifuh iuwefhkewkfglw iuhfliewgf flkwbfl ihfwekf hfiuwehefl ifuhleiu
+        Message 1
         </div>
         <div className="message">
-        hii dbasjhdfb
+        Message 2
         </div>
         <div className="message doctorside">
-        ok good
+        Ok good
         </div>
         <input type="text" className="textinputforchat" placeholder="TEXT HERE"/>
       </div>
     </div>
   );
 };
+
+export default Teleconsultation
